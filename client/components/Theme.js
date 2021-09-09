@@ -1,6 +1,6 @@
 import {createTheme} from '@material-ui/core/styles'
 
-const colorOne = '#C3A789'
+const colorOne = '#d4c0ab'
 const colorTwo = '#d4c0ab'
 const colorThree = '#EFE9E4'
 const colorFour = '#f2e5d7'
@@ -56,7 +56,7 @@ export default createTheme({
       letterSpacing: 5
     },
     tab: {
-      fontSize: '1em',
+      fontSize: '1.9em',
       fontWeight: 400,
       fontFamily: ['Italiana, serif'].join(','),
       letterSpacing: 2

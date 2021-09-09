@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import Link from '@material-ui/core/Link'
 import GridList from '@material-ui/core/GridList'
 import forest from '../../public/images/forest.jpg'
 
@@ -12,8 +13,12 @@ const LandingPage = () => {
     let pos = window.scrollY
     //console.log(pos)
     //console.log(line1Ref.current.style.left)
+
     line1Ref.current.style.left = `${pos}px`
     line2Ref.current.style.right = `${pos}px`
+  }
+  const preventDefault = event => {
+    event.preventDefault()
   }
   return (
     <div className="landingBackground">
@@ -38,7 +43,29 @@ const LandingPage = () => {
       <Grid container justifyContent="center">
         <img src={forest} style={{marginTop: '4em'}} />
       </Grid>
-
+      <Grid container justifyContent="center">
+        <Grid
+          item
+          component="a"
+          href="https://www.linkedin.com/in/priscila-pintado/"
+          rel="noopener noreferrer"
+          target="_blank"
+          style={{marginTop: '4em', margin: '1.5em'}}
+        >
+          <Typography variant="h4">Linkedin</Typography>
+        </Grid>
+        <Grid
+          item
+          component="a"
+          href="https://github.com/peachyspace"
+          rel="noopener noreferrer"
+          target="_blank"
+          style={{marginTop: '4em', margin: '1.5em'}}
+        >
+          <Typography variant="h4">GitHub</Typography>
+        </Grid>
+      </Grid>
+      {/* make seperate compoinents fir items below like footer */}
       <Typography variant="h3" style={{marginTop: '40em'}}>
         Software Engineer who has fullstack development experince but has a bias
         towards frontend development
