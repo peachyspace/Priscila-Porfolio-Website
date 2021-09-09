@@ -1,9 +1,10 @@
 body {
   font-family: sans-serif;
-  background-color: #dad2c5;
-}
+  background-color: #ffffff;
 
-a {
+  height: 500vh;
+}
+s a {
   text-decoration: none;
 }
 
@@ -23,7 +24,6 @@ form div {
 }
 
 .landingBackground {
-  background-color: #dad2c5;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -33,7 +33,25 @@ form div {
   height: auto;
 
   /* Set up positioning */
-  position: fixed;
+  /* position: fixed;
   top: 1;
-  left: 0;
+  left: 0; */
+
+  /* overflow: auto; */
+}
+
+.line-1 {
+  position: fixed;
+  top: 20%;
+  left: -800px;
+  background: white;
+  white-space: nowrap;
+}
+
+.line-2 {
+  position: fixed;
+  top: 40%;
+  right: -800px;
+  background: white;
+  white-space: nowrap;
 }
