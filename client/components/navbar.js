@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   return (
     <React.Fragment>
-      <AppBar color="transparent">
+      <AppBar color="primary" style={{opacity: '88%'}}>
         <Toolbar>
           <img src={logo} alt="logo" style={{width: '3em', height: '3em'}} />
           <Tabs className="navMenu">
@@ -26,27 +26,30 @@ const Navbar = () => {
               text-transform="none"
               style={{
                 textTransform: 'none',
-                fontFamily: 'Italiana, serif',
-                fontSize: '1.9rem',
-                padding: '6px 26px'
+                fontFamily: 'IBM Plex Mono',
+                fontSize: '1.5rem',
+                padding: '6px 26px',
+                opacity: '1'
               }}
             />
             <Tab
               label="About"
               style={{
                 textTransform: 'none',
-                fontFamily: 'Italiana, serif',
-                fontSize: '1.9rem',
-                padding: '6px 26px'
+                fontFamily: 'IBM Plex Mono',
+                fontSize: '1.5rem',
+                padding: '6px 26px',
+                opacity: '1'
               }}
             />
             <Tab
               label="Contact"
               style={{
                 textTransform: 'none',
-                fontFamily: 'Italiana, serif',
-                fontSize: '1.9rem',
-                padding: '6px 26px'
+                fontFamily: 'IBM Plex Mono',
+                fontSize: '1.5rem',
+                padding: '6px 26px',
+                opacity: '1'
               }}
             />
           </Tabs>

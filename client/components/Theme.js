@@ -1,6 +1,6 @@
 import {createTheme} from '@material-ui/core/styles'
 
-const colorOne = '#d4c0ab'
+const colorOne = '#ffffff'
 const colorTwo = '#d4c0ab'
 const colorThree = '#EFE9E4'
 const colorFour = '#f2e5d7'
@@ -25,52 +25,61 @@ export default createTheme({
     }
   },
   typography: {
+    root: {
+      margin: '1px, 1px, 1px, 1px'
+    },
     h1: {
-      fontSize: '3.8rem',
-      fontWeight: 600,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontSize: '4.5rem',
+      fontWeight: 400,
+      fontFamily: 'IBM Plex Mono',
+      letterSpacing: 5
+    },
+    h2: {
+      fontSize: '3.4rem',
+      fontWeight: 400,
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     h3: {
       fontSize: '2.8rem',
-      fontWeight: 500,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontWeight: 400,
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     h4: {
-      fontSize: '1.71rem',
-      fontWeight: 400,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontSize: '2.1rem',
+      fontWeight: 300,
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 2
     },
     h5: {
       fontSize: '1.2rem',
-      fontWeight: 400,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontWeight: 300,
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     h6: {
       fontSize: '0.8rem',
       fontWeight: 400,
-      fontFamily: ['Josefin Slab, serif'].join(','),
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     tab: {
       fontSize: '1.9em',
       fontWeight: 400,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 2
     },
     body1: {
       fontSize: '1.25em',
-      fontWeight: 500,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontWeight: 400,
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 2
     },
     body2: {
       fontSize: '1.25em',
       fontWeight: 300,
-      fontFamily: ['Italiana, serif'].join(','),
+      fontFamily: 'IBM Plex Mono',
       letterSpacing: 2
     }
   },
