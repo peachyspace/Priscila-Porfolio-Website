@@ -33,21 +33,29 @@ const FooterSection = () => {
         <Link
           hover="underline"
           href="/"
-          className={classes.link}
+          className="footerLink"
           style={{marginRight: '2em'}}
         >
-          home
+          Home
         </Link>
         <Link
           hover="underline"
           href="/"
-          className={classes.link}
+          className="footerLink"
           style={{marginRight: '2em'}}
         >
-          about
+          About
         </Link>
-        <Link hover="underline" className={classes.link} href="/">
-          contact
+        <Link
+          hover="underline"
+          className="footerLink"
+          style={{marginRight: '2em'}}
+          href="/"
+        >
+          Projects
+        </Link>
+        <Link hover="underline" className="footerLink" href="/">
+          Contact
         </Link>
       </Grid>
       <Grid

@@ -75,7 +75,7 @@ const LandingPage = () => {
             className="landingBigFont"
             style={{
               backgroundImage: 'none',
-              fontWeight: '300'
+              fontWeight: '200'
             }}
           >
             I turn ideas into reality. <br />

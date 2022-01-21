@@ -49,6 +49,7 @@ const ProjectSection = () => {
           </Typography>
           <Button
             variant="outlined"
+            className="projectButton"
             style={{marginTop: '2em', textTransform: 'none'}}
           >
             Learn More
@@ -86,6 +87,7 @@ const ProjectSection = () => {
           </Typography>
           <Button
             variant="outlined"
+            className="projectButton"
             style={{marginTop: '2em', textTransform: 'none'}}
           >
             Learn More
@@ -115,11 +117,28 @@ const ProjectSection = () => {
           </Typography>
           <Button
             variant="outlined"
+            className="projectButton"
             style={{marginTop: '2em', textTransform: 'none'}}
           >
             Learn More
           </Button>
         </Grid>
+      </Grid>
+      <Grid
+        container
+        className="moreProjectsButtonSection"
+        rowSpacing={1}
+        style={{backgroundColor: '#fbecff'}}
+      >
+        <Button
+          variant="text"
+          className="moreProjectsButton"
+          style={{
+            textTransform: 'none'
+          }}
+        >
+          View More Projects
+        </Button>
       </Grid>
     </Grid>
   )

@@ -53,13 +53,14 @@ form div {
 .contentWrap {
   flex: 1;
 }
+
 /* NavBar */
 .MuiTab-textColorInherit {
   opacity: 1; /* delete later */
 }
 .navAnchorText {
   font-family: 'IBM Plex Mono';
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: black;
   /* height: 100vh; */
@@ -71,6 +72,7 @@ form div {
   position: fixed; /*sets nav to fixed position */
   top: 0; /* positions nav to the top of page */
   width: 100%; /* full width */
+  z-index: 9999;
 }
 /* links inside nav */
 .nav a {
@@ -156,34 +158,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-right: 1em;
   padding-bottom: 3em;
 }
-
-.line-1 {
-  position: fixed;
-  top: 20%;
-  left: -800px;
-  background: white;
-  white-space: nowrap;
-}
-
-.line-2 {
-  position: fixed;
-  top: 40%;
-  right: -800px;
-  background: white;
-  white-space: nowrap;
-}
-
-/* .projectSecBox:hover{
-  box-shadow: 10px 10px 15px 5px rgb(40, 3, 3);
-  transform: rotate(2deg) scale(1.15);
-  transition: all 0.3s ease;
-  background:rgb(119, 66, 136);
-  color: rgb(216, 194, 68);
- 
-} */
-.headingClamp1 {
-  /* clamp(MIN, VAL, MAX) */
-  font-size: clamp(40px, 8vw, 80px);
+.footerLink {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 1.1em;
 }
 
 /* Landing Section */
@@ -217,6 +195,18 @@ here we refrence the label with the class nav__toggle and select the img with th
 .MuiGrid-grid-xs-6.projectDetails {
   padding-left: 6em;
 }
+.MuiButton-root.projectButton {
+  font-family: 'IBM Plex Mono';
+}
+.moreProjectsButtonSection {
+  justify-content: center;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+.MuiButton-root.moreProjectsButton {
+  font-size: 1.5rem;
+  font-family: 'IBM Plex Mono';
+}
 .MuiGrid-container.miniIntroSection {
   /* targets a specific container */
   padding: 0px 4px;
@@ -225,8 +215,8 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .landingBigFont {
   font-size: clamp(40px, 8vw, 80px);
-  /* background-image:linear-gradient(transparent 0%, transparent calc(70% - 9px), rgba(0, 255, 0, 0.35) calc(70% - 9px), rgba(0, 255, 0, 0.35) 100%);
-  background-size: 100% 80% ; */
+  /* color: #d561e9; */
+  color: #be2ee1;
 }
 .landingSmallFont {
   max-width: 560px;
@@ -241,6 +231,8 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding: 0;
     overflow-x: hidden;
   }
+
+  /* Navbar section */
   .menu {
     margin-top: 0.9rem;
   }
@@ -252,14 +244,18 @@ here we refrence the label with the class nav__toggle and select the img with th
     gap: 1.5rem;
     height: 2.1rem;
   }
-
-  .MuiTypography-h1.landingBigFont {
+  .navAnchorText {
     font-size: 1.2rem;
-    font-weight: 700;
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255));
+  }
+
+  /* Landing page Section */
+  .MuiTypography-h1.landingBigFont {
+    font-size: 1.5rem;
+    font-weight: 500;
+    /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
   .MuiTypography-h4.landingSmallFont {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 300;
     max-width: 250px;
   }
@@ -270,9 +266,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     /* display: flex; */
     flex-direction: column;
   }
-  .MuiGrid-grid-xs-6.footerBox {
-    max-width: none;
-  }
+
   .MuiGrid-grid-xs-6.projectImageGrid {
     max-width: none;
     padding-left: 2.9em;
@@ -288,6 +282,24 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-left: 4em;
     margin-top: 1em;
   }
+  .MuiButton-root.projectButton {
+    font-size: 0.72rem;
+  }
+  .MuiButton-root.moreProjectsButton {
+    font-size: 0.9rem;
+  }
+
+  /* Footer Section */
+  .MuiGrid-grid-xs-6.footerBox {
+    max-width: none;
+  }
+  .footerBox {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footerLink {
+    font-size: 0.91rem;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 830px) {
   html,
@@ -298,11 +310,29 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding: 0;
     overflow-x: hidden;
   }
+
+  /* Navbar section */
+  .logo {
+    width: 2.5rem;
+  }
+  .menu {
+    width: 2.7rem;
+    margin-top: 0.6rem;
+  }
+  #nav__checkbox:checked ~ ul.nav__menu {
+    height: 30vh;
+  }
+
+  /* Landing Page Section */
   .MuiTypography-h1.landingBigFont {
     font-size: 3rem;
   }
+  .phoneProjectImage {
+    margin-left: 8em;
+  }
 }
 @media only screen and (min-width: 831px) {
+  /* Navbar section */
   .nav__toggle {
     display: none;
   }
@@ -315,6 +345,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   .logo {
     width: 3.5rem;
   }
-}
 
-/* About Section */
+  /* Landing Section */
+  .MuiButton-root.projectButton {
+    font-size: 1.2rem;
+  }
+
+  /* Footer Section */
+  .footerLink {
+    font-size: 1.4rem;
+  }
+
+  /* About Section */
+}
