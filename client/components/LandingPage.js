@@ -13,6 +13,7 @@ const LandingPage = () => {
   const classes = useStyles()
   return (
     <div
+      className="main"
       style={{
         backgroundImage: `url(${largePrism})`,
         // height: '200em',

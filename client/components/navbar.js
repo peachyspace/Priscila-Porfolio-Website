@@ -8,9 +8,65 @@ import Tab from '@material-ui/core/Tab'
 import logo from '../../public/images/logo.png'
 import Button from '@material-ui/core/Button'
 import {Link} from 'react-router-dom'
-import {logout} from '../store'
+import menuIcon from '../../public/images/menuIcon.png'
+import closeIcon from '../../public/images/closeIcon.png'
 
 const Navbar = () => {
+  const [value, setValue] = useState(0)
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  }
+  return (
+    <nav className="nav">
+      <input type="checkbox" id="nav__checkbox" className="nav__checkbox" />
+      <label htmlFor="nav__checkbox" className="nav__toggle">
+        <img src={menuIcon} className="menu" alt="menu" />
+        <img src={closeIcon} className="close" />
+      </label>
+      <ul className="nav__menu">
+        <li>
+          <img src={logo} alt="logo" className="logo" />
+        </li>
+        <li>
+          <a href="#" className="navAnchorText">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" className="navAnchorText">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#" className="navAnchorText">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#" className="navAnchorText">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  )
+}
+export default Navbar
+
+/* import React, {useState} from 'react'
+import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
+import logo from '../../public/images/logo.png'
+import Button from '@material-ui/core/Button'
+import {Link} from 'react-router-dom'
+
+
+const Navbar = () => {
+
   const [value, setValue] = useState(0)
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -53,61 +109,9 @@ const Navbar = () => {
               }}
             />
           </Tabs>
+
         </Toolbar>
       </AppBar>
     </React.Fragment>
   )
-}
-export default Navbar
-/**
- * PROP TYPES
- */
-// Navbar.propTypes = {
-//   handleClick: PropTypes.func.isRequired,
-//   isLoggedIn: PropTypes.bool.isRequired
-// }
-
-// const Navbar = ({handleClick, isLoggedIn}) => (
-//   <div>
-//     <h1>navbar</h1>
-//     <nav>
-//       {isLoggedIn ? (
-//         <div>
-
-//           <Link to="/home">Home</Link>
-//           <a href="#" onClick={handleClick}>
-//             Logout
-//           </a>
-//         </div>
-//       ) : (
-//         <div>
-
-//           <Link to="/login">Login</Link>
-//           <Link to="/signup">Sign Up</Link>
-//         </div>
-//       )}
-//     </nav>
-//     <hr />
-//   </div>
-// )
-
-// const mapState = state => {
-//   return {
-//     isLoggedIn: !!state.user.id
-//   }
-// }
-
-// const mapDispatch = dispatch => {
-//   return {
-//     handleClick() {
-//       dispatch(logout())
-//     }
-//   }
-// }
-
-// export default connect(mapState, mapDispatch)(Navbar)
-
-// Navbar.propTypes = {
-//   handleClick: PropTypes.func.isRequired,
-//   isLoggedIn: PropTypes.bool.isRequired
-// }
+} */
