@@ -34,7 +34,7 @@ const FooterSection = () => {
           hover="underline"
           href="/"
           className="footerLink"
-          style={{marginRight: '2em'}}
+          style={{marginRight: '1.3rem'}}
         >
           Home
         </Link>
@@ -42,15 +42,15 @@ const FooterSection = () => {
           hover="underline"
           href="/"
           className="footerLink"
-          style={{marginRight: '2em'}}
+          style={{marginRight: '1.3rem'}}
         >
           About
         </Link>
         <Link
           hover="underline"
           className="footerLink"
-          style={{marginRight: '2em'}}
-          href="/"
+          style={{marginRight: '1.3rem'}}
+          href="/projects"
         >
           Projects
         </Link>
@@ -71,7 +71,7 @@ const FooterSection = () => {
           <img
             src={linkedin_icon}
             alt="linkedin icon"
-            style={{marginLeft: '2em'}}
+            style={{marginLeft: '2rem'}}
           />
         </Link>
       </Grid>
