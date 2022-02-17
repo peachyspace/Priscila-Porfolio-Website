@@ -6,6 +6,8 @@ import Link from '@material-ui/core/Link'
 import GridList from '@material-ui/core/GridList'
 import ProjectSection from './landingSections/ProjectSection'
 import largePrism from '../../public/images/largePrism.jpg'
+import WorkSpaceSection from '../components/landingSections/WorkSpaceSection'
+import MiniAboutSection from './landingSections/MinIAboutSection'
 
 const useStyles = makeStyles(() => ({}))
 
@@ -15,14 +17,14 @@ const LandingPage = () => {
     <div
       className="main"
       style={{
-        backgroundImage: `url(${largePrism})`,
+        //backgroundImage: `url(${largePrism})`,
         // height: '200em',
-        paddingBottom: '2em',
+        backgroundColor: '#fbecff',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >
-      <Grid container className="miniIntroSection">
+      {/*       <Grid container className="miniIntroSection">
         <Grid
           item
           style={{
@@ -100,6 +102,12 @@ const LandingPage = () => {
             experinces. Currently, I am looking for my next adventure.
           </Typography>
         </Grid>
+      </Grid> */}
+      <Grid>
+        <WorkSpaceSection />
+      </Grid>
+      <Grid>
+        <MiniAboutSection />
       </Grid>
       <Grid>
         <ProjectSection />

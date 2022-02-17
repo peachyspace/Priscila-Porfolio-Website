@@ -35,11 +35,15 @@ const ProjectsPage = () => {
         >
           <Grid item xs={6} className="projectIntroHeading">
             <Typography
-              variant="h4"
+              variant="h3"
               className="projectBigFont"
-              style={{marginTop: '4em'}}
+              style={{marginTop: '2em'}}
             >
               Projects
+            </Typography>
+            <Typography variant="h5" className="projectIntroSmallFont">
+              Take a look at my projects. Each project has allowed to utilize my
+              logical and creative side.
             </Typography>
           </Grid>
           <Grid item xs={6} className="lottieDevicesHolder">

@@ -29,10 +29,11 @@ export default createTheme({
       margin: '1px, 1px, 1px, 1px'
     },
     h1: {
-      fontSize: '4.5rem',
+      fontSize: '2.5rem',
       fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
-      letterSpacing: 5
+      letterSpacing: 5,
+      color: '#49464e'
     },
     h2: {
       fontSize: '3.4rem',
@@ -56,7 +57,7 @@ export default createTheme({
       fontSize: '1.2rem',
       fontWeight: 300,
       fontFamily: 'IBM Plex Mono',
-      letterSpacing: 5
+      letterSpacing: 2
     },
     h6: {
       fontSize: '0.8rem',
@@ -74,7 +75,8 @@ export default createTheme({
       fontSize: '1.25em',
       fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
-      letterSpacing: 2
+      letterSpacing: 2,
+      color: '#49464e'
     },
     body2: {
       fontSize: '1.25em',

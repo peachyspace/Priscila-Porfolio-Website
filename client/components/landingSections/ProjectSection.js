@@ -6,7 +6,7 @@ import Link from '@material-ui/core/Link'
 import moodboardLaptop from '../../../public/images/moodboardLaptop.png'
 import tigerSugarLaptop from '../../../public/images/tigerSugarLaptop.png'
 import vitamonPhone6 from '../../../public/images/vitamonPhone6.png'
-
+import greenSlantedDesktop from '../../../public/images/greenSlantedDesktop.png'
 const ProjectSection = () => {
   const preventDefault = event => {
     event.preventDefault()
@@ -24,7 +24,7 @@ const ProjectSection = () => {
             background: 'none'
           }}
         >
-          Projects
+          Featured Project
         </Typography>
       </Grid>
       <Grid
@@ -32,31 +32,32 @@ const ProjectSection = () => {
         rowSpacing={1}
         columnSpacing={{xs: 1, sm: 2, md: 3}}
         className="projectSecBox"
-        style={{backgroundColor: '#f3fdb4'}}
+        style={{backgroundColor: '#e5d5ff'}}
       >
         <Grid item xs={6} className="projectImageGrid">
-          <img src={moodboardLaptop} className="laptopProjectImage" />
+          <img src={greenSlantedDesktop} className="laptopProjectImage" />
         </Grid>
         <Grid item xs={6} className="projectDetails">
           <Typography style={{fontSize: 'clamp(14px, 2vw, 29px)'}}>
             Moodboard
           </Typography>
           <Typography
-            style={{fontSize: 'clamp(14px, 2vw, 29px)', marginTop: '1em'}}
+            className="projSecText"
+            style={{fontSize: 'clamp(14px, 2vw, 29px)'}}
           >
             A workspace that allows users to unlesh their creativity by creating
             mood boards. Users can utilize images from their computer or Pixabay
           </Typography>
-          <Button
+          {/*           <Button
             variant="outlined"
             className="projectButton"
-            style={{marginTop: '2em', textTransform: 'none'}}
+            style={{textTransform: 'none'}}
           >
             Learn More
-          </Button>
+          </Button> */}
         </Grid>
       </Grid>
-      <Grid
+      {/* <Grid
         container
         rowSpacing={1}
         columnSpacing={{xs: 1, sm: 2, md: 3}}
@@ -123,12 +124,12 @@ const ProjectSection = () => {
             Learn More
           </Button>
         </Grid>
-      </Grid>
+      </Grid>*/}
       <Grid
         container
         className="moreProjectsButtonSection"
         rowSpacing={1}
-        style={{backgroundColor: '#fbecff'}}
+        style={{backgroundColor: '#e5d5ff'}}
       >
         <Button
           variant="text"

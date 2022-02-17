@@ -34,7 +34,7 @@ label {
 a,
 a:link,
 a:visited {
-  color: rgb(0, 0, 0);
+  color: #49464e;
   text-decoration: none;
 }
 a:hover {
@@ -54,94 +54,224 @@ form div {
   flex: 1;
 }
 
-/* NavBar */
-.MuiTab-textColorInherit {
-  opacity: 1; /* delete later */
+/* navMenu  */
+.navMenuHolder {
+  background-color: transparent;
 }
-.navAnchorText {
+.navMenu {
+  position: fixed;
+  right: 0;
+  z-index: 200; /* always on top */
+}
+.menuBarsHolder {
+  right: 4.5%;
+  top: 2%;
+  z-index: 202;
+  position: fixed;
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(133 177 179);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  border: 1.75px solid rgb(255 255 255);
+}
+#bar1 {
+  transform: translateY(-5px);
+}
+
+#bar3 {
+  transform: translateY(5px);
+}
+
+.menuButton {
+  border: none;
+}
+
+.closeMenu {
+  display: none;
+  /* makes closeMenu invisible */
+}
+/* make close img visible when menu img is clicked on 
+here we refrence the label with the class nav__toggle and select the img with the class named close*/
+/* #navMenu__checkbox:checked ~ label.navMenu__toggle .closeMenu {
+  display: block;
+} */
+/* makes menu img invisible when checkbox is checked */
+/* #navMenu__checkbox:checked ~ label.navMenu__toggle .lineMenu {
+  display: none;
+} */
+.navMenu_link-holder a {
+  position: relative;
+  text-decoration: none;
+  color: #49464e;
+  font-size: 1.5em;
+  font-family: 'IBM Plex Mono';
+  display: inline-block;
+  /* margin-top: 1.25em; */
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+.navMenu_link-holder a::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: rgb(255 255 255);
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+.navMenu_link-holder a:hover::before {
+  height: 100%;
+}
+.navMenu_link-holder {
+  line-height: 36px;
+  /* opacity: 0; */
+}
+.navMenu_link-holder li {
+  list-style: none;
+}
+.menu-wrap {
+  opacity: 0;
+  /* display: none; */
+  position: fixed;
+  top: 85px;
+  right: 120px;
+  z-index: 202;
+  /* width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #d561e9, #dc055f);
+   */
+}
+.menu-bg {
+  z-index: 199;
+  position: fixed; /* default is static */
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  /* margin: 30px 0 20px 20px; */
+  background: radial-gradient(circle, #f1f1f1, #85b1b3);
+  border-bottom-left-radius: 500px;
+  transition: 0.3s ease;
+}
+.change {
+  /* display: block; */
+  opacity: 1;
+  transition: opacity 0.4s 0.4s;
+}
+.change .bar {
+  background-color: rgb(133 177 179);
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-44deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
+.change #bar3 {
+  transform: translateY(-12px) rotatez(44deg);
+}
+
+.change-bg {
+  width: 420px;
+  height: 420px;
+  /* transform:translate(-60%,30%) */
+}
+
+/*End of navMenu*/
+
+/* OLD  NavBar */
+/* .MuiTab-textColorInherit {
+  opacity: 1; 
+} */
+/* .navAnchorText {
   font-family: 'IBM Plex Mono';
   font-size: 1.4rem;
   font-weight: 400;
   color: black;
-  /* height: 100vh; */
-}
-.nav {
-  border-bottom: 1px solid lightgray;
-
+} */
+/* .nav {
   overflow: hidden;
-  position: fixed; /*sets nav to fixed position */
-  top: 0; /* positions nav to the top of page */
-  width: 100%; /* full width */
+  position: fixed; 
+  top: 19px; 
+  right: 19px;
   z-index: 9999;
-}
+  border-radius: 50px;
+} */
 /* links inside nav */
-.nav a {
+/* .nav a {
   float: right;
-  display: block; /* might need to delete */
-}
+  display: block; 
+} */
 
-.nav__toggle {
+/* .nav__toggle {
   position: absolute;
-  cursor: pointer; /* mouse pointer shows */
+  cursor: pointer; 
   margin: 0rem 1rem;
   right: 0;
-}
-.menu {
+} */
+/* .menu {
   width: 2rem;
-  fill: lightgray; /* delete later */
   margin-top: 0.2rem;
-}
-.close {
+} */
+/* .close {
   width: 2rem;
-  fill: lightgray; /* delete later */
-  display: none; /* close not visible */
+  display: none; 
   margin-top: 0.2rem;
-}
-.nav__checkbox {
+} */
+/* .nav__checkbox {
   display: none;
-}
-.nav__menu {
+} */
+/* .nav__menu {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 1rem;
+  padding: 36px;
   background-color: white;
-  height: 2.8rem;
-}
-ul.nav__menu li {
+} */
+/* ul.nav__menu li {
   list-style: none;
   display: none;
-}
+} */
 ul.nav__menu li:first-child {
-  margin-right: auto;
-  display: block; /* allows logo to de displayed */
-}
-.logo {
-  width: 1.5rem;
-  fill: lightgray;
+  /*   margin-right: auto;
+  display: block;  */ /* allows logo to de displayed */
 }
 
+/* .logo {
+  width: 1.5rem;
+  fill: lightgray;
+} */
+
 /* use the id called nav__checkbox to control the height of the navbar that is represented by the unordered list that has the nav__menu class  */
-#nav__checkbox:checked ~ ul.nav__menu {
+/* #nav__checkbox:checked ~ ul.nav__menu {
   height: 35vh;
-}
+} */
+
 /* take advantage of the id called nav__checkbox. Use that id to control when the nav links(li tags) are displayed
 "~" is a sibling selector */
-#nav__checkbox:checked ~ ul.nav__menu li {
-  display: block; /* <li></li> is now visible */
-}
+/* #nav__checkbox:checked ~ ul.nav__menu li {
+  display: block; 
+} */
 
 /* make close img visible when menu img is clicked on 
 here we refrence the label with the class nav__toggle and select the img with the class named close*/
-#nav__checkbox:checked ~ label.nav__toggle .close {
+/* #nav__checkbox:checked ~ label.nav__toggle .close {
   display: block;
   margin-top: 0.9rem;
-}
+} */
 /* makes menu img invisible when checkbox is checked */
-#nav__checkbox:checked ~ label.nav__toggle .menu {
+/* #nav__checkbox:checked ~ label.nav__toggle .menu {
   display: none;
-}
+} */
 
 /* Footer */
 .footer {
@@ -165,6 +295,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 
 /* Landing Section */
+
 /* .landingBackground {
    Set rules to fill background 
   min-height: 100%;
@@ -174,9 +305,214 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 100%;
   height: auto;
 } */
+
+.main {
+  padding-top: 2.7rem;
+  padding-bottom: 2rem;
+}
+.workSpaceSection {
+  /* padding-top: 6rem; */
+  position: relative;
+}
+
+/* '.worSpaceSection img' allows to select all the images within the workSpaceSection */
+.workSpaceSection img {
+  width: 100%;
+  height: auto;
+}
+.webPageHolder {
+  position: absolute;
+  width: 22.39%;
+  top: 48.9%;
+  left: 29.5%;
+  z-index: 107;
+}
+.pop {
+  animation: pop;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.purpleCodeEditorHolder {
+  position: absolute;
+  width: 32.39%;
+  top: 40.8%;
+  left: 49.96%;
+  z-index: 107;
+}
+.pop2 {
+  animation: pop2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes pop2 {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hourArrowHolder {
+  position: absolute;
+  width: 14%;
+  top: 43.65%;
+  left: 8.5%;
+  z-index: 107;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.minArrowHolder {
+  position: absolute;
+  width: 14%;
+  top: 43.65%;
+  left: 8.5%;
+  z-index: 106;
+}
+.rotate2 {
+  animation-name: rotate2;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.miniAboutSectionBg {
+  /*   background: linear-gradient(
+    180deg
+    , rgb(253 218 245) 0%, rgb(241 236 247) 100%); */
+  background-image: url(images/greenBackground.png);
+  background-position: center -133px;
+}
+.aboutHolder {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  /* position:relative; */
+  align-items: center;
+}
+.aboutLeft {
+  width: 55%;
+  margin-right: 5%;
+  margin-top: 5%;
+  position: relative;
+  /* float: left; */
+}
+.aboutLeft img {
+  width: 100%;
+}
+
+.bodyHolder {
+  position: absolute;
+  margin-top: 0%;
+  top: 0px;
+}
+.headHolder {
+  position: absolute;
+  top: 0px;
+  left: 40.3%;
+  width: 19%;
+  margin-top: 14.9%;
+  z-index: 101;
+}
+.sideToSide {
+  animation-name: sideToSide;
+  animation-duration: 3.5s;
+  /*   transform-origin: 50% 90%; */
+  animation-iteration-count: infinite;
+}
+@keyframes sideToSide {
+  0% {
+    transform: rotate(-3.55deg);
+  }
+  50% {
+    transform: rotate(3.55deg);
+  }
+  100% {
+    transform: rotate(-3.55deg);
+  }
+}
+.aboutRight {
+  width: 55%;
+  margin-left: 5%;
+  margin-top: 21%;
+  position: relative;
+}
+.miniIntroHeading {
+  color: #49464e;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: IBM Plex Mono;
+}
+.miniIntroSubheading {
+  color: #49464e;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: IBM Plex Mono;
+}
+.wave {
+  width: 100%;
+  background-image: url(images/greenWave.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+}
+.bottomWave {
+  width: 100%;
+  background-image: url(images/pastelPurpleFlippedWave.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  height: 182px;
+}
+
 .projectSec {
   width: 100%;
-  background: #fbecff;
+  background: #e5d5ff;
   margin-bottom: 10em;
   background-size: 'cover';
 }
@@ -187,16 +523,21 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .laptopProjectImage {
   width: 100%;
-  margin-left: 4em;
+  margin-left: 7%;
 }
 .phoneProjectImage {
   margin-left: 11em;
 }
 .MuiGrid-grid-xs-6.projectDetails {
-  padding-left: 6em;
+  margin-top: 1.1%;
+  padding-left: 4%;
+}
+.MuiTypography-body1.projSecText {
+  margin-top: 1em;
 }
 .MuiButton-root.projectButton {
   font-family: 'IBM Plex Mono';
+  margin-top: 22%;
 }
 .moreProjectsButtonSection {
   justify-content: center;
@@ -206,6 +547,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 .MuiButton-root.moreProjectsButton {
   font-size: 1.5rem;
   font-family: 'IBM Plex Mono';
+  color: #5d5a62;
 }
 .MuiGrid-container.miniIntroSection {
   /* targets a specific container */
@@ -216,7 +558,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 .landingBigFont {
   font-size: clamp(40px, 8vw, 80px);
   /* color: #d561e9; */
-  color: #be2ee1;
+  color: #49464e;
 }
 .landingSmallFont {
   max-width: 560px;
@@ -273,36 +615,28 @@ here we refrence the label with the class nav__toggle and select the img with th
   margin-top: 7rem;
   padding-left: 1.5rem;
 }
+.MuiTypography-h5.projectIntroSmallFont {
+  margin-top: 1rem;
+}
+/* @media screen and (max-width: 480px)  */
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 427px) {
   html,
   body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
-  /* Navbar section */
-  .menu {
-    margin-top: 0.9rem;
-  }
-  .logo {
-    width: 2rem;
-    margin-top: 0.2rem;
-  }
-  .nav__menu {
-    gap: 1.5rem;
-    height: 2.1rem;
-  }
-  .navAnchorText {
-    font-size: 1.2rem;
-  }
+  /* navMenu  */
+
+  /*End of navMenu*/
 
   /* Landing page Section */
   .MuiTypography-h1.landingBigFont {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
@@ -311,6 +645,31 @@ here we refrence the label with the class nav__toggle and select the img with th
     font-weight: 300;
     max-width: 250px;
   }
+  .miniAboutSectionBg {
+    background-position: center -216px;
+  }
+  .wave {
+    background-size: 420px 55px;
+  }
+  .bottomWave {
+    background-size: 420px 55px;
+    height: 86px;
+  }
+  .projectSec {
+    margin-bottom: 2rem;
+  }
+  .projectSecBox {
+    padding-top: 1rem;
+  }
+  .miniIntroHeading {
+    font-size: 1.3rem;
+  }
+  .miniIntroSubheading {
+    font-size: 0.86rem;
+  }
+  .moreProjectsButtonSection {
+    margin-bottom: 2rem;
+  }
   .MuiGrid-root.projectHeading {
     margin-left: 2em;
   }
@@ -318,11 +677,19 @@ here we refrence the label with the class nav__toggle and select the img with th
     margin-top: 1rem;
     padding-left: 1rem;
   }
+  .MuiButton-root.projectButton {
+    margin-top: 8%;
+  }
+  .moreProjectsButtonSection {
+    padding-top: 0px;
+  }
   .MuiGrid-container {
     /* display: flex; */
     flex-direction: column;
   }
-
+  .MuiGrid-container.projectPageBox {
+    flex-wrap: nowrap;
+  }
   .MuiGrid-grid-xs-6.projectImageGrid {
     max-width: none;
     padding-left: 2.9em;
@@ -340,6 +707,136 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiButton-root.projectButton {
     font-size: 0.72rem;
+    color: #626066;
+    background-color: #6ebbb075;
+  }
+  .MuiButton-root.moreProjectsButton {
+    font-size: 0.9rem;
+    background-color: #6ebbb075;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Footer Section */
+  .MuiGrid-grid-xs-6.footerBox {
+    min-width: 100%;
+    /*  max-width: none; */
+  }
+  .footerBox {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footerLink {
+    font-size: 0.91rem;
+  }
+
+  /* Project Page */
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 100%;
+  }
+  .projectPageImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .MuiTypography-body1.projectName {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiTypography-body1.projectDetail {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .projectButtonHolder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiButton-root.projectPageButton {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 428px) and (max-width: 622px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+
+  /* navMenu  */
+
+  /*End of navMenu*/
+
+  /* Landing page Section */
+  .MuiTypography-h1.landingBigFont {
+    font-size: 1.5rem;
+    font-weight: 500;
+    /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
+  }
+  .MuiTypography-h4.landingSmallFont {
+    font-size: 0.85rem;
+    font-weight: 300;
+    max-width: 250px;
+  }
+  .miniAboutSectionBg {
+    background-position: center -216px;
+  }
+  .wave {
+    background-size: 610px 59px;
+  }
+  .bottomWave {
+    background-size: 610px 59px;
+  }
+  .MuiGrid-root.projectHeading {
+    margin-left: 2em;
+  }
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .MuiGrid-container {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  .MuiGrid-container.projectPageBox {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-grid-xs-6.projectImageGrid {
+    max-width: none;
+    padding-left: 2.9em;
+  }
+  .laptopProjectImage {
+    margin-left: 0em;
+  }
+  .phoneProjectImage {
+    margin-left: 3.9em;
+  }
+  .MuiGrid-grid-xs-6.projectDetails {
+    max-width: none;
+    padding-left: 4em;
+    margin-top: 1em;
+  }
+  .MuiButton-root.projectButton {
+    font-size: 0.72rem;
+    color: #626066;
+    margin-top: 8%;
   }
   .MuiButton-root.moreProjectsButton {
     font-size: 0.9rem;
@@ -397,28 +894,20 @@ here we refrence the label with the class nav__toggle and select the img with th
     font-size: 0.75rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 830px) {
+@media screen and (min-width: 623px) and (max-width: 830px) {
   html,
   body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
-  /* Navbar section */
-  .logo {
-    width: 2.5rem;
-  }
-  .menu {
-    width: 2.7rem;
-    margin-top: 0.6rem;
-  }
-  #nav__checkbox:checked ~ ul.nav__menu {
-    height: 30vh;
-  }
-  /* Footer Section */
+  /* navMenu  */
+
+  /*End of navMenu*/
+
   .MuiGrid-grid-xs-6.footerBox {
     min-width: 100%;
   }
@@ -430,6 +919,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .phoneProjectImage {
     margin-left: 8em;
   }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
   .MuiButton-root.moreProjectsButton {
     font-size: 1.15rem;
   }
@@ -437,29 +929,48 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .miniAboutSectionBg {
+    background-position: center -178px;
+  }
+  .wave {
+    background-size: 836px 96px;
+  }
+  .aboutRight {
+    margin-top: 10%;
+  }
+  .bottomWave {
+    background-size: 836px 96px;
+  }
   /* Project Page Section */
   .MuiButton-root.projectPageButton {
     font-size: 0.95rem;
   }
 }
-@media only screen and (min-width: 831px) {
-  /* Navbar section */
-  .nav__toggle {
-    display: none;
-  }
-  .nav__menu {
-    flex-direction: row;
-  }
-  ul.nav__menu li {
-    display: block;
-  }
-  .logo {
-    width: 3.5rem;
-  }
+/* @media only screen and (min-width: 831px) */
+@media screen and (min-width: 831px) and (max-width: 1000px) {
+  /* navMenu  */
+
+  /*End of navMenu*/
 
   /* Landing Section */
+  .miniAboutSectionBg {
+    background-position: center -178px;
+  }
+  .wave {
+    background-size: 994px 96px;
+  }
+  .bottomWave {
+    background-size: 994px 96px;
+  }
+  .aboutRight {
+    margin-top: -70px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
   .MuiButton-root.projectButton {
     font-size: 1.2rem;
+    color: #626066;
   }
 
   /* Footer Section */
@@ -468,4 +979,31 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
 
   /* About Section */
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -14%;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -14%;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+}
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
 }
