@@ -580,7 +580,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 .projectBigFont {
   font-size: clamp(40px, 8vw, 80px);
   /* color: #d561e9; */
-  color: #be2ee1;
+  color: #49464e;
 }
 .MuiGrid-container.projectPageSection {
   margin-bottom: 7rem;
@@ -611,6 +611,93 @@ here we refrence the label with the class nav__toggle and select the img with th
   margin-top: 7rem;
   padding-right: 4rem;
 }
+.MuiGrid-grid-xs-6.devicesHolder {
+  margin-top: 0;
+  padding-right: 4rem;
+  position: relative;
+}
+.MuiGrid-grid-xs-6.devicesHolder img {
+  width: 70%;
+}
+.laptopHolder {
+  top: 32%;
+  left: 19%;
+  position: absolute;
+  z-index: 104;
+  width: 78%;
+}
+.bigBallHolder {
+  animation: bigBallFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 103;
+  width: 40%;
+}
+@keyframes bigBallFloat {
+  50% {
+    transform: translateY(130px);
+  }
+}
+.yellowCylinderHolder {
+  animation: yellowFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  top: 7%;
+  right: 0%;
+  position: absolute;
+  z-index: 104;
+  width: 46%;
+}
+@keyframes yellowFloat {
+  50% {
+    transform: translateY(50px);
+  }
+}
+.lightPinkSmallHolder {
+  animation: lightPinkFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  top: 2%;
+  left: 35%;
+  position: absolute;
+  z-index: 105;
+  width: 45%;
+}
+@keyframes lightPinkFloat {
+  50% {
+    transform: translateY(180px);
+  }
+}
+.pinkCylinderHolder {
+  top: 27%;
+  left: 8%;
+  position: absolute;
+  z-index: 104;
+  width: 35%;
+}
+.skyBlueCircleHolder {
+  top: 24%;
+  right: 1%;
+  position: absolute;
+  z-index: 104;
+  width: 34%;
+}
+.websiteBoxesHolder {
+  top: 30%;
+  left: 29%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.phoneHolder {
+  top: 30%;
+  right: 2%;
+  position: absolute;
+  z-index: 104;
+  width: 42%;
+}
+
 .MuiGrid-grid-xs-6.projectIntroHeading {
   margin-top: 7rem;
   padding-left: 1.5rem;

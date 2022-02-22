@@ -10,6 +10,8 @@ import purprleLinkedinIcon from '../../public/images/purprleLinkedinIcon.png'
 import greenMail_Icon from '../../public/images/greenMail_Icon.png'
 import darkGreenMail_icon from '../../public/images/darkGreenMail_icon.png'
 import lightGreenMail_icon from '../../public/images/lightGreenMail_icon.png'
+import purpleGitHubIcon from '../../public/images/purpleGitHubIcon.png'
+
 const useStyles = makeStyles(() => ({
   link: {
     fontFamily: 'IBM Plex Mono',
@@ -75,6 +77,13 @@ const FooterSection = () => {
           <img
             src={purprleLinkedinIcon}
             alt="linkedin icon"
+            style={{marginLeft: '2rem'}}
+          />
+        </Link>
+        <Link href="/">
+          <img
+            src={purpleGitHubIcon}
+            alt="github icon"
             style={{marginLeft: '2rem'}}
           />
         </Link>

@@ -9,6 +9,14 @@ import vitamonPhone6 from '../../public/images/vitamonPhone6.png'
 import moodboardTextChangePic from '../../public/images/moodboardTextChangePic.png'
 import Lottie from 'react-lottie'
 import devicesData from '../../public/lottieFiles/devices.json'
+import greenLaptop from '../../public/images/greenLaptop.png'
+import bigGreenBall from '../../public/images/bigGreenBall.png'
+import yellowCylinder from '../../public/images/yellowCylinder.png'
+import lightPinkSmallBall from '../../public/images/lightPinkSmallBall.png'
+import pinkCylinder from '../../public/images/pinkCylinder.png'
+import skyBlueCircle from '../../public/images/skyBlueCircle.png'
+import websiteBoxes from '../../public/images/websiteBoxes.png'
+import phone from '../../public/images/phone.png'
 const ProjectsPage = () => {
   const defaultOptions = {
     loop: true,
@@ -20,7 +28,7 @@ const ProjectsPage = () => {
     <div
       className="projectPage"
       style={{
-        backgroundColor: '#dafff5',
+        backgroundColor: '#fbecff',
         paddingBottom: '2em',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
@@ -46,8 +54,32 @@ const ProjectsPage = () => {
               logical and creative side.
             </Typography>
           </Grid>
-          <Grid item xs={6} className="lottieDevicesHolder">
-            <Lottie options={defaultOptions} height={300} width={300} />
+          <Grid item xs={6} className="devicesHolder">
+            {/*             <Lottie options={defaultOptions} height={300} width={300} /> */}
+            <div className="laptopHolder">
+              <img src={greenLaptop} alt="laptop" />
+            </div>
+            <div className="bigBallHolder">
+              <img src={bigGreenBall} alt="green big ball" />
+            </div>
+            <div className="yellowCylinderHolder">
+              <img src={yellowCylinder} alt="yellow cylinder" />
+            </div>
+            <div className="lightPinkSmallHolder">
+              <img src={lightPinkSmallBall} alt="light pink small ball" />
+            </div>
+            <div className="pinkCylinderHolder">
+              <img src={pinkCylinder} alt="pink cylinder" />
+            </div>
+            <div className="skyBlueCircleHolder">
+              <img src={skyBlueCircle} alt="sky blue circle" />
+            </div>
+            <div className="websiteBoxesHolder">
+              <img src={websiteBoxes} alt="website boxes" />
+            </div>
+            <div className="phoneHolder">
+              <img src={phone} alt="phone" />
+            </div>
           </Grid>
         </Grid>
         <Grid
