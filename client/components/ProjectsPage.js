@@ -16,6 +16,11 @@ import lightPinkSmallBall from '../../public/images/lightPinkSmallBall.png'
 import pinkCylinder from '../../public/images/pinkCylinder.png'
 import skyBlueCircle from '../../public/images/skyBlueCircle.png'
 import websiteBoxes from '../../public/images/websiteBoxes.png'
+import periwinkleCrayolaBall from '../../public/images/periwinkleCrayolaBall.png'
+import pinkLavenderBall from '../../public/images/pinkLavenderBall.png'
+import blueBellBall from '../../public/images/blueBellBall.png'
+import thistleBall from '../../public/images/thistleBall.png'
+import operaMauveBall from '../../public/images/operaMauveBall.png'
 import phone from '../../public/images/phone.png'
 const ProjectsPage = () => {
   const defaultOptions = {
@@ -62,7 +67,7 @@ const ProjectsPage = () => {
             <div className="bigBallHolder">
               <img src={bigGreenBall} alt="green big ball" />
             </div>
-            <div className="yellowCylinderHolder">
+            {/*             <div className="yellowCylinderHolder">
               <img src={yellowCylinder} alt="yellow cylinder" />
             </div>
             <div className="lightPinkSmallHolder">
@@ -73,6 +78,21 @@ const ProjectsPage = () => {
             </div>
             <div className="skyBlueCircleHolder">
               <img src={skyBlueCircle} alt="sky blue circle" />
+            </div> */}
+            <div className="periwinkleCrayolaBallHolder">
+              <img src={periwinkleCrayolaBall} alt="ball_1" />
+            </div>
+            <div className="pinkLavenderBallHolder">
+              <img src={pinkLavenderBall} alt="ball_2" />
+              <div className="blueBellBallHolder">
+                <img src={blueBellBall} alt="ball_3" />
+              </div>
+            </div>
+            <div className="thistleBallHolder">
+              <img src={thistleBall} alt="ball_4" />
+            </div>
+            <div className="operaMauveBallHolder">
+              <img src={operaMauveBall} alt="ball_5" />
             </div>
             <div className="websiteBoxesHolder">
               <img src={websiteBoxes} alt="website boxes" />

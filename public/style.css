@@ -635,8 +635,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 40%;
 }
 @keyframes bigBallFloat {
-  50% {
+  /* 50% {
     transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(120px) translateX(0) scale(0.7);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-420px) scale(1);
+    opacity: 0;
   }
 }
 .yellowCylinderHolder {
@@ -650,8 +658,46 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 46%;
 }
 @keyframes yellowFloat {
-  50% {
+  /*   50% {
     transform: translateY(50px);
+  } */
+  0% {
+    transform: translateY(-30px) translateX(-100px) scale(0.8);
+    opacity: 0.5;
+  }
+  10% {
+    transform: translateY(0px) translateX(20px) scale(0.8);
+    opacity: 0.7;
+  }
+  /* 20%{
+    transform: translateY(100px) translateX(-100px) scale(0.25); opacity: 0.7;
+  }
+  30%{
+    transform: translateY(150px) translateX(20px) scale(0.25); opacity: 0.9;
+  } */
+  40% {
+    transform: translateY(60px) translateX(-100px) scale(0.8);
+    opacity: 1;
+  }
+  /* 50%{
+    transform: translateY(250px) translateX(20px) scale(0.25); opacity: 1;
+  }
+ 60%{
+    transform: translateY(300px) translateX(-100px) scale(0.25); opacity: 0.9;
+  } */
+  70% {
+    transform: translateY(190px) translateX(20px) scale(0.8);
+    opacity: 0.9;
+  }
+  /* 80%{
+    transform: translateY(400px) translateX(-100px) scale(0.25); opacity: 0.5;
+  }
+  90%{
+    transform: translateY(450px) translateX(20px) scale(0.25); opacity: 0.2;
+  } */
+  100% {
+    transform: translateY(260px) translateX(-100px) scale(1);
+    opacity: 0;
   }
 }
 .lightPinkSmallHolder {
@@ -677,15 +723,66 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 35%;
 }
 .skyBlueCircleHolder {
+  animation-name: skyBlueCircleFloat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   top: 24%;
   right: 1%;
   position: absolute;
   z-index: 104;
   width: 34%;
 }
+@keyframes skyBlueCircleFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-70px) translateX(120px) scale(1);
+    opacity: 0;
+  }
+}
 .websiteBoxesHolder {
   top: 30%;
   left: 29%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.periwinkleCrayolaBallHolder {
+  top: 25%;
+  left: 22%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.pinkLavenderBallHolder {
+  top: 45%;
+  left: 32%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.blueBellBallHolder {
+  top: 15%;
+  left: 12%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.thistleBallHolder {
+  top: 15%;
+  left: 12%;
+  position: absolute;
+  z-index: 104;
+  width: 47%;
+}
+.operaMauveBallHolder {
+  top: 18%;
+  left: 20%;
   position: absolute;
   z-index: 104;
   width: 47%;
