@@ -21,6 +21,7 @@ import pinkLavenderBall from '../../public/images/pinkLavenderBall.png'
 import blueBellBall from '../../public/images/blueBellBall.png'
 import thistleBall from '../../public/images/thistleBall.png'
 import operaMauveBall from '../../public/images/operaMauveBall.png'
+import purpleSandBall from '../../public/images/purpleSandBall.png'
 import phone from '../../public/images/phone.png'
 const ProjectsPage = () => {
   const defaultOptions = {
@@ -61,12 +62,10 @@ const ProjectsPage = () => {
           </Grid>
           <Grid item xs={6} className="devicesHolder">
             {/*             <Lottie options={defaultOptions} height={300} width={300} /> */}
-            <div className="laptopHolder">
-              <img src={greenLaptop} alt="laptop" />
-            </div>
-            <div className="bigBallHolder">
+
+            {/*             <div className="bigBallHolder">
               <img src={bigGreenBall} alt="green big ball" />
-            </div>
+            </div> */}
             {/*             <div className="yellowCylinderHolder">
               <img src={yellowCylinder} alt="yellow cylinder" />
             </div>
@@ -79,20 +78,27 @@ const ProjectsPage = () => {
             <div className="skyBlueCircleHolder">
               <img src={skyBlueCircle} alt="sky blue circle" />
             </div> */}
-            <div className="periwinkleCrayolaBallHolder">
-              <img src={periwinkleCrayolaBall} alt="ball_1" />
+
+            <div className="operaMauveBallHolder">
+              <img src={operaMauveBall} alt="ball#1" />
+            </div>
+            <div className="milkyLavenderBallHolder">
+              <img src={blueBellBall} alt="ball#2" />
+            </div>
+            <div className="purpleSandBallHolder">
+              <img src={purpleSandBall} alt="ball#3" />
             </div>
             <div className="pinkLavenderBallHolder">
               <img src={pinkLavenderBall} alt="ball_2" />
-              <div className="blueBellBallHolder">
-                <img src={blueBellBall} alt="ball_3" />
-              </div>
             </div>
             <div className="thistleBallHolder">
               <img src={thistleBall} alt="ball_4" />
             </div>
-            <div className="operaMauveBallHolder">
-              <img src={operaMauveBall} alt="ball_5" />
+            <div className="periwinkleCrayolaBallHolder">
+              <img src={periwinkleCrayolaBall} alt="ball_1" />
+            </div>
+            <div className="laptopHolder">
+              <img src={greenLaptop} alt="laptop" />
             </div>
             <div className="websiteBoxesHolder">
               <img src={websiteBoxes} alt="website boxes" />

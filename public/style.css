@@ -621,7 +621,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .laptopHolder {
   top: 32%;
-  left: 19%;
+  left: 11%;
   position: absolute;
   z-index: 104;
   width: 78%;
@@ -747,25 +747,12 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .websiteBoxesHolder {
   top: 30%;
-  left: 29%;
-  position: absolute;
-  z-index: 104;
-  width: 47%;
-}
-.periwinkleCrayolaBallHolder {
-  top: 25%;
   left: 22%;
   position: absolute;
   z-index: 104;
   width: 47%;
 }
-.pinkLavenderBallHolder {
-  top: 45%;
-  left: 32%;
-  position: absolute;
-  z-index: 104;
-  width: 47%;
-}
+
 .blueBellBallHolder {
   top: 15%;
   left: 12%;
@@ -773,23 +760,148 @@ here we refrence the label with the class nav__toggle and select the img with th
   z-index: 104;
   width: 47%;
 }
-.thistleBallHolder {
-  top: 15%;
-  left: 12%;
+
+.operaMauveBallHolder {
+  animation-name: operaMauveBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  top: 29%;
+  right: 11%;
   position: absolute;
-  z-index: 104;
+  z-index: 103;
   width: 47%;
 }
-.operaMauveBallHolder {
+@keyframes operaMauveBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px) translateX(20px) scale(1);
+    opacity: 0;
+  }
+}
+.milkyLavenderBallHolder {
+  animation-name: milkyLavenderBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
   top: 18%;
-  left: 20%;
+  right: 29%;
   position: absolute;
-  z-index: 104;
+  z-index: 103;
   width: 47%;
+}
+@keyframes milkyLavenderBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px) translateX(0px) scale(1);
+    opacity: 0;
+  }
+}
+.purpleSandBallHolder {
+  animation-name: purpleSandBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  top: 29%;
+  left: 10%;
+  position: absolute;
+  z-index: 103;
+  width: 47%;
+}
+@keyframes purpleSandBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px) translateX(-32px) scale(1);
+    opacity: 0;
+  }
+}
+.pinkLavenderBallHolder {
+  animation-name: pinkLavenderBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  bottom: 20%;
+  left: 8%;
+  position: absolute;
+  z-index: 103;
+  width: 47%;
+}
+@keyframes pinkLavenderBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px) translateX(-32px) scale(1);
+    opacity: 0;
+  }
+}
+.thistleBallHolder {
+  animation-name: thistleBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  bottom: 12%;
+  right: 27%;
+  position: absolute;
+  z-index: 103;
+  width: 47%;
+}
+@keyframes thistleBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px) translateX(-10px) scale(1);
+    opacity: 0;
+  }
+}
+.periwinkleCrayolaBallHolder {
+  animation-name: periwinkleCrayolaBallFloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  bottom: 20%;
+  right: 11%;
+  position: absolute;
+  z-index: 103;
+  width: 47%;
+}
+@keyframes periwinkleCrayolaBallFloat {
+  /* 50% {
+    transform: translateY(130px);
+  } */
+  0% {
+    transform: translateY(10px) translateX(0) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px) translateX(20px) scale(1);
+    opacity: 0;
+  }
 }
 .phoneHolder {
   top: 30%;
-  right: 2%;
+  right: 9%;
   position: absolute;
   z-index: 104;
   width: 42%;
