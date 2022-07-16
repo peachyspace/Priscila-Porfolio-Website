@@ -72,7 +72,7 @@ export default createTheme({
       letterSpacing: 2
     },
     body1: {
-      fontSize: '1.25em',
+      fontSize: '1.30em',
       fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
       letterSpacing: 2,
@@ -82,7 +82,8 @@ export default createTheme({
       fontSize: '1.25em',
       fontWeight: 300,
       fontFamily: 'IBM Plex Mono',
-      letterSpacing: 2
+      letterSpacing: 2,
+      color: '#49464e'
     }
   },
   breakpoints: {

@@ -38,7 +38,8 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(145, 32, 116);
+  /*  color: rgb(145, 32, 116); */
+  color: rgb(102, 141, 142);
 }
 
 form div {
@@ -277,6 +278,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 .footer {
   /* margin-top: 1rem; */
   /* padding: 1rem; */
+  align-items: center;
   position: relative;
   bottom: 0;
   /* left: 0; */
@@ -438,7 +440,8 @@ here we refrence the label with the class nav__toggle and select the img with th
 .aboutLeft {
   width: 55%;
   margin-right: 5%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
+  margin-top: 13%;
   position: relative;
   /* float: left; */
 }
@@ -484,15 +487,21 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .miniIntroHeading {
   color: #49464e;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: clamp(28px, 2vw, 29px);
   font-weight: 400;
   font-family: IBM Plex Mono;
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
 .miniIntroSubheading {
   color: #49464e;
-  font-size: 1.1rem;
+  /*  font-size: 1.1rem; */
+  font-size: clamp(14px, 2vw, 29px);
   font-weight: 400;
   font-family: IBM Plex Mono;
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
 .wave {
   width: 100%;
@@ -507,19 +516,31 @@ here we refrence the label with the class nav__toggle and select the img with th
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% 140px;
-  height: 182px;
+  height: 94px;
+}
+
+.upsideDownPurpleWave {
+  width: 100%;
+  background-image: url(images/upsideDownPastelPurpleWave.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  height: 94px;
 }
 
 .projectSec {
   width: 100%;
   background: #e5d5ff;
-  margin-bottom: 10em;
+  /*  margin-bottom: 10em; */
   background-size: 'cover';
 }
 .projectSecBox {
   padding-top: 3em;
   padding-bottom: 3em;
   padding-right: 3.5em;
+}
+.MuiTypography-body1.projSecText {
+  font-size: clamp(14px, 2vw, 29px);
 }
 .laptopProjectImage {
   width: 100%;
@@ -534,6 +555,9 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .MuiTypography-body1.projSecText {
   margin-top: 1em;
+}
+.MuiTypography-body1.projectSecFeatText {
+  font-size: clamp(28px, 2vw, 29px);
 }
 .MuiButton-root.projectButton {
   font-family: 'IBM Plex Mono';
@@ -555,11 +579,13 @@ here we refrence the label with the class nav__toggle and select the img with th
   flex-direction: column;
   margin-bottom: 12em;
 }
-.landingBigFont {
-  font-size: clamp(40px, 8vw, 80px);
-  /* color: #d561e9; */
-  color: #49464e;
+.MuiTypography-h1.landingBigFont {
+  padding-left: 5%;
 }
+/* .landingBigFont {
+  font-size: clamp(40px, 8vw, 80px);
+  color: #49464e;
+} */
 .landingSmallFont {
   max-width: 560px;
 }
@@ -577,15 +603,17 @@ here we refrence the label with the class nav__toggle and select the img with th
   flex-direction: column;
   margin-bottom: 12em;
 }
-.projectBigFont {
+.MuiTypography-h3.projectBigFont {
   font-size: clamp(40px, 8vw, 80px);
   /* color: #d561e9; */
   color: #49464e;
+  margin-top: 1em;
 }
 .MuiGrid-container.projectPageSection {
   margin-bottom: 7rem;
 }
 .projectPageBox {
+  /*removed margin-top: 12%; */
   padding-top: 3rem;
   padding-bottom: 3rem;
   /*   margin-bottom: 7rem; */
@@ -599,26 +627,139 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-right: 2em;
 }
 .MuiTypography-body1.projectName {
-  margin-top: 7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1c1a20;
+  display: inline-block;
+  vertical-align: middle;
+  /* color: #49464e; */
 }
+.MuiTypography-body1.projectName:hover {
+  color: #fbecff;
+}
+
+.MuiBox-root-1.fullstackTitle1 {
+  font-size: 0.65em;
+  color: #fbecff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiBox-root-1.fullstackTitle1:hover {
+  color: #1c1a20;
+}
+.MuiBox-root-2.fullstackTitle2 {
+  font-size: 0.65em;
+  color: #fbecff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiBox-root-2.fullstackTitle2:hover {
+  color: #1c1a20;
+}
+
+.MuiBox-root-3.fullstackTitle3 {
+  font-size: 0.65em;
+  color: #fbecff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiBox-root-3.fullstackTitle3:hover {
+  color: #1c1a20;
+}
+
+.MuiBox-root-4.fullstackTitle4 {
+  font-size: 0.65em;
+  color: #fbecff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiBox-root-4.fullstackTitle4:hover {
+  color: #1c1a20;
+}
+
 .MuiTypography-body1.projectDetail {
-  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #2b272e;
+  /* color: #28262b; */
+}
+.MuiTypography-body1.projectDetail:hover {
+  color: #f8eafc;
 }
 .MuiButton-root.projectPageButton {
   font-family: 'IBM Plex Mono';
 }
-.MuiGrid-grid-xs-6.lottieDevicesHolder {
-  margin-top: 7rem;
-  padding-right: 4rem;
+.MuiGrid-container.projectHeader {
+  margin-top: 4em;
+  padding-bottom: 12%;
 }
 .MuiGrid-grid-xs-6.devicesHolder {
   margin-top: 0;
   padding-right: 4rem;
   position: relative;
 }
+/* .MuiGrid-grid-xs-6.devicesHolder img {
+  width: 90%;
+} */
 .MuiGrid-grid-xs-6.devicesHolder img {
-  width: 70%;
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.devicesHolder img {
+  max-width: 70%;
+}
+
+.codeEditorBGHolder {
+  /*  top: 17%; */
+  /* left: 25%; */
+  position: absolute;
+  z-index: 103;
+}
+.projectCodeEditorHolder {
+  position: absolute;
+  /* top: 17%; */
+  /* left: 25%; */
+  z-index: 104;
+}
+.floatingCodeEditor {
+  animation-name: floatingCodeEditor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes floatingCodeEditor {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.7);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0) translateX(0) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(0.7);
+    opacity: 1;
+  }
+}
+.projectWave {
+  width: 100%;
+  background-image: url(images/greenWave.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  /* added */
+  height: 94px;
+}
+.projectBottomWave {
+  width: 100%;
+  background-image: url(images/flippedGreenWave.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 108px;
+  height: 94px;
+}
+
 .laptopHolder {
   top: 32%;
   left: 11%;
@@ -626,125 +767,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   z-index: 104;
   width: 78%;
 }
-.bigBallHolder {
-  animation: bigBallFloat;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  position: absolute;
-  z-index: 103;
-  width: 40%;
-}
-@keyframes bigBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(120px) translateX(0) scale(0.7);
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateY(-200px) translateX(-420px) scale(1);
-    opacity: 0;
-  }
-}
-.yellowCylinderHolder {
-  animation: yellowFloat;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  top: 7%;
-  right: 0%;
-  position: absolute;
-  z-index: 104;
-  width: 46%;
-}
-@keyframes yellowFloat {
-  /*   50% {
-    transform: translateY(50px);
-  } */
-  0% {
-    transform: translateY(-30px) translateX(-100px) scale(0.8);
-    opacity: 0.5;
-  }
-  10% {
-    transform: translateY(0px) translateX(20px) scale(0.8);
-    opacity: 0.7;
-  }
-  /* 20%{
-    transform: translateY(100px) translateX(-100px) scale(0.25); opacity: 0.7;
-  }
-  30%{
-    transform: translateY(150px) translateX(20px) scale(0.25); opacity: 0.9;
-  } */
-  40% {
-    transform: translateY(60px) translateX(-100px) scale(0.8);
-    opacity: 1;
-  }
-  /* 50%{
-    transform: translateY(250px) translateX(20px) scale(0.25); opacity: 1;
-  }
- 60%{
-    transform: translateY(300px) translateX(-100px) scale(0.25); opacity: 0.9;
-  } */
-  70% {
-    transform: translateY(190px) translateX(20px) scale(0.8);
-    opacity: 0.9;
-  }
-  /* 80%{
-    transform: translateY(400px) translateX(-100px) scale(0.25); opacity: 0.5;
-  }
-  90%{
-    transform: translateY(450px) translateX(20px) scale(0.25); opacity: 0.2;
-  } */
-  100% {
-    transform: translateY(260px) translateX(-100px) scale(1);
-    opacity: 0;
-  }
-}
-.lightPinkSmallHolder {
-  animation: lightPinkFloat;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  top: 2%;
-  left: 35%;
-  position: absolute;
-  z-index: 105;
-  width: 45%;
-}
-@keyframes lightPinkFloat {
-  50% {
-    transform: translateY(180px);
-  }
-}
-.pinkCylinderHolder {
-  top: 27%;
-  left: 8%;
-  position: absolute;
-  z-index: 104;
-  width: 35%;
-}
-.skyBlueCircleHolder {
-  animation-name: skyBlueCircleFloat;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  top: 24%;
-  right: 1%;
-  position: absolute;
-  z-index: 104;
-  width: 34%;
-}
-@keyframes skyBlueCircleFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-70px) translateX(120px) scale(1);
-    opacity: 0;
-  }
-}
+
 .websiteBoxesHolder {
   top: 30%;
   left: 22%;
@@ -753,170 +776,211 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 47%;
 }
 
-.blueBellBallHolder {
-  top: 15%;
-  left: 12%;
-  position: absolute;
-  z-index: 104;
-  width: 47%;
-}
-
-.operaMauveBallHolder {
-  animation-name: operaMauveBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  top: 29%;
-  right: 11%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes operaMauveBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-30px) translateX(20px) scale(1);
-    opacity: 0;
-  }
-}
-.milkyLavenderBallHolder {
-  animation-name: milkyLavenderBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  top: 18%;
-  right: 29%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes milkyLavenderBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-30px) translateX(0px) scale(1);
-    opacity: 0;
-  }
-}
-.purpleSandBallHolder {
-  animation-name: purpleSandBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  top: 29%;
-  left: 10%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes purpleSandBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-30px) translateX(-32px) scale(1);
-    opacity: 0;
-  }
-}
-.pinkLavenderBallHolder {
-  animation-name: pinkLavenderBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  bottom: 20%;
-  left: 8%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes pinkLavenderBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(30px) translateX(-32px) scale(1);
-    opacity: 0;
-  }
-}
-.thistleBallHolder {
-  animation-name: thistleBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  bottom: 12%;
-  right: 27%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes thistleBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(30px) translateX(-10px) scale(1);
-    opacity: 0;
-  }
-}
-.periwinkleCrayolaBallHolder {
-  animation-name: periwinkleCrayolaBallFloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  bottom: 20%;
-  right: 11%;
-  position: absolute;
-  z-index: 103;
-  width: 47%;
-}
-@keyframes periwinkleCrayolaBallFloat {
-  /* 50% {
-    transform: translateY(130px);
-  } */
-  0% {
-    transform: translateY(10px) translateX(0) scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(30px) translateX(20px) scale(1);
-    opacity: 0;
-  }
-}
-.phoneHolder {
-  top: 30%;
-  right: 9%;
-  position: absolute;
-  z-index: 104;
-  width: 42%;
-}
-
 .MuiGrid-grid-xs-6.projectIntroHeading {
-  margin-top: 7rem;
+  /*   margin-top: 7rem; */
   padding-left: 1.5rem;
 }
 .MuiTypography-h5.projectIntroSmallFont {
   margin-top: 1rem;
 }
 /* @media screen and (max-width: 480px)  */
+@media screen and (min-width: 120px) and (max-width: 300px) {
+  /* Landing Page */
+  /*   .miniAboutSectionBg {
+    background-position: center -220px;
+  }
+  .wave {
+    background-size: 99%, 51px;
+    height: 102px;
+  }
+  .bottomWave {
+    background-size: 99%, 51px;
+    height: 102px;
+  } */
+  .miniAboutSectionBg {
+    background-position: center -246px;
+  }
+  .wave {
+    background-size: 301px, 61px;
+  }
+  .bottomWave {
+    background-size: 301px, 61px;
+    /* height: 136px; */
+  }
+  .upsideDownPurpleWave {
+    background-size: 301px, 61px;
+    height: 22px;
+  }
+  .aboutHolder {
+    flex-direction: column;
+  }
+  .laptopProjectImage {
+    margin-left: 0%;
+  }
+  .aboutRight {
+    width: auto;
+    margin-left: 0%;
+  }
+  .miniIntroHeading {
+    /* font-size: 1.1rem; */
+    font-size: clamp(16px, 2vw, 29px);
+  }
+  .miniIntroSubheading {
+    font-size: clamp(11px, 2vw, 29px);
+    margin-top: 5%;
+  }
 
-@media screen and (min-width: 300px) and (max-width: 427px) {
+  .MuiTypography-h1.landingBigFont {
+    font-size: 0.9rem;
+    margin-left: 0.8em;
+    /* text-align: center; */
+  }
+
+  .MuiGrid-container.projectSecBox {
+    padding-top: 1rem;
+    padding-right: 0rem;
+    margin: 0px auto;
+    width: 90%;
+  }
+
+  .MuiGrid-grid-xs-6.projectDetails {
+    max-width: none;
+    /* padding-left: 4em; */
+    padding-left: 0%;
+    margin-top: 1em;
+  }
+
+  .MuiTypography-body1.projSecText {
+    font-size: clamp(11px, 2vw, 29px);
+  }
+  .MuiButton-root.moreProjectsButton {
+    font-size: 0.5rem;
+  }
+  .MuiGrid-container.projectSecBox {
+    align-items: center;
+  }
+  .MuiTypography-body1.projectSecFeatText {
+    font-size: clamp(16px, 2vw, 29px);
+  }
+
+  /* Project Page */
+
+  .MuiTypography-h3.projectBigFont {
+    font-size: 0.9em;
+  }
+  .MuiTypography-h5.projectBigFont {
+    font-size: 0.7em;
+  }
+  .MuiTypography-body1.projectName {
+    font-size: 0.8rem;
+  }
+
+  .MuiTypography-body1.projectDetail {
+    font-size: 0.6rem;
+  }
+  .projectWave {
+    background-size: 301px 96px;
+  }
+  .projectBottomWave {
+    background-size: 301px 96px;
+  }
+  .MuiGrid-container {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 100%; */
+    max-width: 70%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectPageImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    /* max-width: 100%; */
+    max-width: 610px;
+    /*     padding-left: 0rem;
+    padding-right: 0rem; */
+  }
+  .MuiTypography-body1.projectName {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiBox-root-1.fullstackTitle1 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-2.fullstackTitle2 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-3.fullstackTitle3 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-4.fullstackTitle4 {
+    font-size: 0.55em;
+  }
+
+  .MuiTypography-body1.projectDetail {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .projectButtonHolder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiButton-root.projectPageButton {
+    font-size: 0.4rem;
+  }
+  .MuiGrid-container.projectHeader {
+    /* padding-bottom: 50%; */
+    /* allows for images not to be pushed out of div when the screen is a phone */
+    /*  height: 400px; */
+    margin-bottom: 70%;
+  }
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    /* margin-top: 1rem; */
+    min-width: 100%;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder {
+    min-width: 100%;
+    height: 200px;
+  }
+
+  /* Footer Section */
+
+  .MuiGrid-grid-xs-6.footerBox {
+    min-width: 100%;
+    /*  max-width: none; */
+  }
+  .footerBox {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .footerBox img {
+    width: 9%;
+  }
+
+  .footerLink {
+    font-size: 0.5rem;
+    /* font-size: 0.91rem; */
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 428px) {
   html,
   body {
     width: 100%;
@@ -932,8 +996,9 @@ here we refrence the label with the class nav__toggle and select the img with th
 
   /* Landing page Section */
   .MuiTypography-h1.landingBigFont {
+    margin-left: 0.5em;
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 400;
     /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
   .MuiTypography-h4.landingSmallFont {
@@ -944,6 +1009,17 @@ here we refrence the label with the class nav__toggle and select the img with th
   .miniAboutSectionBg {
     background-position: center -216px;
   }
+  .aboutHolder {
+    flex-direction: column;
+  }
+  .aboutRight {
+    margin-top: 0%;
+    /*added  */
+    max-width: none;
+    padding-left: 0%;
+    width: auto;
+    margin-left: 0%;
+  }
   .wave {
     background-size: 420px 55px;
   }
@@ -951,26 +1027,32 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 420px 55px;
     height: 86px;
   }
-  .projectSec {
-    margin-bottom: 2rem;
-  }
-  .projectSecBox {
+
+  .MuiGrid-container.projectSecBox {
     padding-top: 1rem;
+    padding-right: 0rem;
+    margin: 0px auto;
+    width: 90%;
   }
   .miniIntroHeading {
     font-size: 1.3rem;
   }
   .miniIntroSubheading {
     font-size: 0.86rem;
+    margin-top: 5%;
   }
-  .moreProjectsButtonSection {
-    margin-bottom: 2rem;
+
+  .upsideDownPurpleWave {
+    background-size: 420px 55px;
+    /* height: 86px; */
+    height: 51px;
   }
   .MuiGrid-root.projectHeading {
-    margin-left: 2em;
+    /* margin-left: 2em; */
+    margin-left: 1em;
   }
   .MuiGrid-grid-xs-6.projectIntroHeading {
-    margin-top: 1rem;
+    /*  margin-top: 1rem; */
     padding-left: 1rem;
   }
   .MuiButton-root.projectButton {
@@ -988,7 +1070,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiGrid-grid-xs-6.projectImageGrid {
     max-width: none;
-    padding-left: 2.9em;
+    /* padding-left: 2.9em; */
   }
   .laptopProjectImage {
     margin-left: 0em;
@@ -998,7 +1080,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiGrid-grid-xs-6.projectDetails {
     max-width: none;
-    padding-left: 4em;
+    /* padding-left: 4em; */
+    padding-left: 0%;
     margin-top: 1em;
   }
   .MuiButton-root.projectButton {
@@ -1008,8 +1091,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiButton-root.moreProjectsButton {
     font-size: 0.9rem;
-    background-color: #6ebbb075;
-    width: 50%;
+    /*  width: 50%; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -1020,17 +1102,30 @@ here we refrence the label with the class nav__toggle and select the img with th
     /*  max-width: none; */
   }
   .footerBox {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+  .footerBox img {
+    width: 9%;
+  }
+
   .footerLink {
-    font-size: 0.91rem;
+    font-size: 0.7rem;
+    /* font-size: 0.91rem; */
   }
 
   /* Project Page */
+
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 100%;
+    /*  max-width: 100%; */
+    max-width: 70%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .projectPageImage {
     margin-left: auto;
     margin-right: auto;
@@ -1049,6 +1144,19 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: 90%;
     display: block;
   }
+  .MuiBox-root-1.fullstackTitle1 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-2.fullstackTitle2 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-3.fullstackTitle3 {
+    font-size: 0.55em;
+  }
+  .MuiBox-root-4.fullstackTitle4 {
+    font-size: 0.55em;
+  }
+
   .MuiTypography-body1.projectDetail {
     margin-top: 1.5rem;
     margin-left: auto;
@@ -1064,6 +1172,32 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiButton-root.projectPageButton {
     font-size: 0.75rem;
+  }
+  /*   .MuiGrid-grid-xs-6.devicesHolder img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* Project Page */
+  .MuiGrid-container.projectHeader {
+    /* padding-bottom: 50%; */
+    /* allows for images not to be pushed out of div when the screen is a phone */
+    height: 650px;
+  }
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    /* margin-top: 1rem; */
+    min-width: 100%;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder {
+    min-width: 100%;
+  }
+  .projectWave {
+    background-size: 428px 96px;
+  }
+  .projectBottomWave {
+    background-size: 428px 96px;
   }
 }
 @media screen and (min-width: 428px) and (max-width: 622px) {
@@ -1082,8 +1216,9 @@ here we refrence the label with the class nav__toggle and select the img with th
 
   /* Landing page Section */
   .MuiTypography-h1.landingBigFont {
-    font-size: 1.5rem;
-    font-weight: 500;
+    padding-left: 3%;
+    font-size: 1.27rem;
+    font-weight: 400;
     /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
   .MuiTypography-h4.landingSmallFont {
@@ -1095,16 +1230,49 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-position: center -216px;
   }
   .wave {
-    background-size: 610px 59px;
+    background-size: 622px 59px;
   }
   .bottomWave {
-    background-size: 610px 59px;
+    background-size: 622px 59px;
+  }
+  .aboutHolder {
+    flex-direction: column;
+  }
+  .aboutRight {
+    margin-top: 0%;
+    /*added  */
+    max-width: none;
+    padding-left: 0%;
+    width: auto;
+    margin-left: 0%;
+  }
+  .MuiGrid-container.projectSecBox {
+    margin: 0px auto;
+    width: 90%;
+  }
+  .projectSecBox {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+  }
+  .miniIntroHeading {
+    font-size: clamp(24px, 2vw, 29px);
+    /* font-size: 1.25rem; */
+    line-height: 1.5;
+    letter-spacing: 2px;
+  }
+  .miniIntroSubheading {
+    margin-top: 4%;
+    font-size: clamp(14px, 2vw, 29px);
+    line-height: 1.5;
+    letter-spacing: 2px;
   }
   .MuiGrid-root.projectHeading {
-    margin-left: 2em;
+    /* margin-left: 1.45em; */
+    margin-left: 2%;
   }
   .MuiGrid-grid-xs-6.projectIntroHeading {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding-left: 1rem;
   }
   .MuiGrid-container {
@@ -1116,7 +1284,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiGrid-grid-xs-6.projectImageGrid {
     max-width: none;
-    padding-left: 2.9em;
+    /* padding-left: 2.9em; */
+    padding-left: 0em;
   }
   .laptopProjectImage {
     margin-left: 0em;
@@ -1126,7 +1295,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiGrid-grid-xs-6.projectDetails {
     max-width: none;
-    padding-left: 4em;
+    /* padding-left: 4em; */
+    padding-left: 0em;
     margin-top: 1em;
   }
   .MuiButton-root.projectButton {
@@ -1136,6 +1306,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiButton-root.moreProjectsButton {
     font-size: 0.9rem;
+  }
+  .upsideDownPurpleWave {
+    background-size: 622px 59px;
+    height: 57px;
   }
 
   /* Footer Section */
@@ -1147,13 +1321,39 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .footerBox img {
+    width: 7.2%;
+  }
   .footerLink {
     font-size: 0.91rem;
   }
 
   /* Project Page */
-  .MuiGrid-grid-xs-6.projectPageImageGrid {
+  /*   .MuiGrid-container.projectHeader {
+    min-width: 100%;
+  } */
+  .MuiGrid-grid-xs-6.projectIntroHeading {
     max-width: 100%;
+  }
+  .MuiTypography-h3.projectBigFont {
+    margin-top: 1em;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder {
+    max-width: 100%;
+    margin-bottom: 49%;
+  }
+  .MuiGrid-container.projectHeader {
+    padding-bottom: 15%;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /*  max-width: 100%; */
+    max-width: 70%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    max-width: 60%;
   }
   .projectPageImage {
     margin-left: auto;
@@ -1189,8 +1389,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiButton-root.projectPageButton {
     font-size: 0.75rem;
   }
+
+  /* Project Page */
+  .projectWave {
+    background-size: 623px 96px;
+  }
+  .projectBottomWave {
+    background-size: 623px 96px;
+  }
 }
-@media screen and (min-width: 623px) and (max-width: 830px) {
+@media screen and (min-width: 622px) and (max-width: 830px) {
   html,
   body {
     width: 100%;
@@ -1210,14 +1418,14 @@ here we refrence the label with the class nav__toggle and select the img with th
 
   /* Landing Page Section */
   .MuiTypography-h1.landingBigFont {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   .phoneProjectImage {
     margin-left: 8em;
   }
-  .MuiTypography-body1.projSecText {
+  /*   .MuiTypography-body1.projSecText {
     margin-top: 13%;
-  }
+  } */
   .MuiButton-root.moreProjectsButton {
     font-size: 1.15rem;
   }
@@ -1228,18 +1436,51 @@ here we refrence the label with the class nav__toggle and select the img with th
   .miniAboutSectionBg {
     background-position: center -178px;
   }
+  .miniIntroHeading {
+    font-size: 1.29rem;
+  }
+  .miniIntroSubheading {
+    font-size: 0.9rem;
+    margin-top: 5%;
+  }
   .wave {
     background-size: 836px 96px;
   }
   .aboutRight {
-    margin-top: 10%;
+    /*  margin-top: 10%; */
+    margin-top: 17%;
   }
   .bottomWave {
     background-size: 836px 96px;
   }
-  /* Project Page Section */
+  .upsideDownPurpleWave {
+    background-size: 836px 96px;
+  }
+  .projectWave {
+    background-size: 836px 96px;
+  }
+  .projectBottomWave {
+    background-size: 836px 96px;
+  }
+  /* Project Page */
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    max-width: 90%;
+  }
   .MuiButton-root.projectPageButton {
     font-size: 0.95rem;
+  }
+
+  .projectWave {
+    background-size: 831px 96px;
+  }
+  .projectBottomWave {
+    background-size: 831px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
   }
 }
 /* @media only screen and (min-width: 831px) */
@@ -1258,6 +1499,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 994px 96px;
   }
+  .upsideDownPurpleWave {
+    background-size: 994px 96px;
+  }
   .aboutRight {
     margin-top: -70px;
   }
@@ -1268,21 +1512,82 @@ here we refrence the label with the class nav__toggle and select the img with th
     font-size: 1.2rem;
     color: #626066;
   }
-
+  /* Project Page */
+  .projectWave {
+    background-size: 1001px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1001px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
   /* Footer Section */
   .footerLink {
     font-size: 1.3rem;
   }
 
   /* About Section */
+
+  /* Project Page */
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    width: 110%;
+  }
+  .projectWave {
+    background-size: 1101px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1101px 96px;
+  }
+  .projectPageImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
 }
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
   /* LandingPage */
   .aboutRight {
     margin-top: -14%;
   }
+  .wave {
+    background-size: 1201px 137px;
+  }
+  .bottomWave {
+    background-size: 1201px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1201px 98px;
+  }
   .MuiTypography-body1.projSecText {
     margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1201px 145px; */
+    background-size: 1201px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1201px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
@@ -1293,13 +1598,528 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiTypography-body1.projSecText {
     margin-top: 13%;
   }
+  .wave {
+    background-size: 1301px 137px;
+  }
+  .bottomWave {
+    background-size: 1301px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1301px 98px;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1301px 155px; */
+    background-size: 1301px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1301px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
 }
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
   /* LandingPage */
   .aboutRight {
     margin-top: -29%;
   }
+  .wave {
+    background-size: 1401px 137px;
+  }
+  .bottomWave {
+    background-size: 1401px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1401px 98px;
+  }
   .MuiTypography-body1.projSecText {
     margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1401px 168px; */
+    background-size: 1401px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1401px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 1501px 137px;
+  }
+  .bottomWave {
+    background-size: 1501px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1501px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1501px 178px; */
+    background-size: 1501px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1501px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 1600px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 1601px 137px;
+  }
+  .bottomWave {
+    background-size: 1601px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1601px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1601px 191px; */
+    background-size: 1601px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1601px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 1701px 137px;
+  }
+  .bottomWave {
+    background-size: 1701px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1701px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1701px 203px; */
+    background-size: 1701px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1701px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 1801px 137px;
+  }
+  .bottomWave {
+    background-size: 1801px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1801px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1801px 214px; */
+    background-size: 1801px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1801px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 1900px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 1901px 137px;
+  }
+  .bottomWave {
+    background-size: 1901px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 1901px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 1901px 226px; */
+    background-size: 1901px 96px;
+  }
+  .projectBottomWave {
+    background-size: 1901px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 1901px) and (max-width: 2000px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2001px 137px;
+  }
+  .bottomWave {
+    background-size: 2001px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2001px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2001px 238px; */
+    background-size: 2001px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2001px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 2001px) and (max-width: 2100px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2101px 137px;
+  }
+  .bottomWave {
+    background-size: 2101px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2101px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2101px 250px; */
+    background-size: 2101px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2101px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 2101px) and (max-width: 2200px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2201px 137px;
+  }
+  .bottomWave {
+    background-size: 2201px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2201px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2201px 263px; */
+    background-size: 2201px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2201px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 2201px) and (max-width: 2300px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2301px 137px;
+  }
+  .bottomWave {
+    background-size: 2301px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2301px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2301px 275px; */
+    background-size: 2301px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2301px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 2301px) and (max-width: 2400px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2401px 137px;
+  }
+  .bottomWave {
+    background-size: 2401px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2401px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2401px 287px; */
+    background-size: 2401px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2401px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 2401px) and (max-width: 2500px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2501px 137px;
+  }
+  .bottomWave {
+    background-size: 2501px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2501px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2501px 299px; */
+    background-size: 2501px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2501px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+/* 38 inch display is 2450px */
+@media screen and (min-width: 2501px) and (max-width: 2600px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2601px 137px;
+  }
+  .bottomWave {
+    background-size: 2601px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2601px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2601px 311px; */
+    background-size: 2601px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2601px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 2601px) and (max-width: 2700px) {
+  /* LandingPage */
+  .aboutRight {
+    margin-top: -29%;
+  }
+  .wave {
+    background-size: 2701px 137px;
+  }
+  .bottomWave {
+    background-size: 2701px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2701px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 2701px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2701px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    max-width: 410px;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
   }
 }

@@ -28,14 +28,9 @@ const FooterSection = () => {
       rowSpacing={1}
       columnSpacing={{xs: 1, sm: 2, md: 3}}
       className="footer"
-      style={{backgroundColor: 'pink', textAlign: 'center'}}
+      style={{backgroundColor: '#e5ddff', textAlign: 'center'}}
     >
-      <Grid
-        item
-        xs={6}
-        className="footerBox"
-        style={{backgroundColor: '#e5ddff'}}
-      >
+      <Grid item xs={6} className="footerBox">
         <Link
           hover="underline"
           href="/"
