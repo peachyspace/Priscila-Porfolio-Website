@@ -638,42 +638,42 @@ here we refrence the label with the class nav__toggle and select the img with th
   color: #fbecff;
 }
 
-.MuiBox-root-1.fullstackTitle1 {
+.fullstackTitle1 {
   font-size: 0.65em;
   color: #fbecff;
   display: inline-block;
   vertical-align: middle;
 }
-.MuiBox-root-1.fullstackTitle1:hover {
+.fullstackTitle1:hover {
   color: #1c1a20;
 }
-.MuiBox-root-2.fullstackTitle2 {
+.fullstackTitle2 {
   font-size: 0.65em;
   color: #fbecff;
   display: inline-block;
   vertical-align: middle;
 }
-.MuiBox-root-2.fullstackTitle2:hover {
-  color: #1c1a20;
-}
-
-.MuiBox-root-3.fullstackTitle3 {
-  font-size: 0.65em;
-  color: #fbecff;
-  display: inline-block;
-  vertical-align: middle;
-}
-.MuiBox-root-3.fullstackTitle3:hover {
+.fullstackTitle2:hover {
   color: #1c1a20;
 }
 
-.MuiBox-root-4.fullstackTitle4 {
+.fullstackTitle3 {
   font-size: 0.65em;
   color: #fbecff;
   display: inline-block;
   vertical-align: middle;
 }
-.MuiBox-root-4.fullstackTitle4:hover {
+.fullstackTitle3:hover {
+  color: #1c1a20;
+}
+
+.fullstackTitle4 {
+  font-size: 0.65em;
+  color: #fbecff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fullstackTitle4:hover {
   color: #1c1a20;
 }
 
@@ -914,16 +914,16 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: 90%;
     display: block;
   }
-  .MuiBox-root-1.fullstackTitle1 {
+  .fullstackTitle1 {
     font-size: 0.55em;
   }
-  .MuiBox-root-2.fullstackTitle2 {
+  .fullstackTitle2 {
     font-size: 0.55em;
   }
-  .MuiBox-root-3.fullstackTitle3 {
+  .fullstackTitle3 {
     font-size: 0.55em;
   }
-  .MuiBox-root-4.fullstackTitle4 {
+  .fullstackTitle4 {
     font-size: 0.55em;
   }
 
@@ -1144,16 +1144,16 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: 90%;
     display: block;
   }
-  .MuiBox-root-1.fullstackTitle1 {
+  .fullstackTitle1 {
     font-size: 0.55em;
   }
-  .MuiBox-root-2.fullstackTitle2 {
+  .fullstackTitle2 {
     font-size: 0.55em;
   }
-  .MuiBox-root-3.fullstackTitle3 {
+  .fullstackTitle3 {
     font-size: 0.55em;
   }
-  .MuiBox-root-4.fullstackTitle4 {
+  .fullstackTitle4 {
     font-size: 0.55em;
   }
 
