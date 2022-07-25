@@ -15,7 +15,10 @@ import pinkLavenderBall from '../../public/images/pinkLavenderBall.png'
 import thistleBall from '../../public/images/thistleBall.png'
 import codeEditorBG from '../../public/images/codeEditorBG.png'
 import projectCodeEditor from '../../public/images/projectCodeEditor.png'
-
+import MBSlider from './slider/MBSlider'
+import VMSlider from './slider/VMSlider'
+import TSlider from './slider/TSlider'
+import PSlider from './slider/PSlider'
 const ProjectsPage = () => {
   return (
     <div
@@ -45,7 +48,11 @@ const ProjectsPage = () => {
             <Typography
               variant="h5"
               className="projectBigFont"
-              style={{marginTop: '2em', marginBottom: '2em'}}
+              style={{
+                marginTop: '2em',
+                marginBottom: '2em',
+                marginLeft: '0.3em'
+              }}
             >
               Take a look at past projects that have allowed me to sharpen my
               skills as a software engineer
@@ -77,7 +84,7 @@ const ProjectsPage = () => {
           style={{backgroundColor: '#85b1b3'}}
         >
           <Grid item xs={6} className="projectPageImageGrid">
-            <img src={moodboardTextChangePic} className="projectPageImage" />
+            <MBSlider />
           </Grid>
           <Grid item xs={6} className="projectPageDetails">
             <Grid container item alignItems="center" flex-direction="row">
@@ -133,7 +140,6 @@ const ProjectsPage = () => {
           </Grid>
         </Grid>
         <div className="projectBottomWave" />
-
         <div className="projectWave" />
         <Grid
           container
@@ -143,7 +149,7 @@ const ProjectsPage = () => {
           style={{backgroundColor: '#85b1b3'}}
         >
           <Grid item xs={6} className="projectPageImageGrid">
-            <img src={moodboardTextChangePic} className="projectPageImage" />
+            <VMSlider />
           </Grid>
           <Grid item xs={6} className="projectPageDetails">
             <Grid container item alignItems="center" flex-direction="row">
@@ -197,7 +203,7 @@ const ProjectsPage = () => {
           style={{backgroundColor: '#85b1b3'}}
         >
           <Grid item xs={6} className="projectPageImageGrid">
-            <img src={moodboardTextChangePic} className="projectPageImage" />
+            <TSlider />
           </Grid>
           <Grid item xs={6} className="projectPageDetails">
             <Grid container item alignItems="center">
@@ -251,7 +257,8 @@ const ProjectsPage = () => {
           style={{backgroundColor: '#85b1b3'}}
         >
           <Grid item xs={6} className="projectPageImageGrid">
-            <img src={moodboardTextChangePic} className="projectPageImage" />
+            {/*            <img src={moodboardTextChangePic} className="projectPageImage" /> */}
+            <PSlider />
           </Grid>
           <Grid item xs={6} className="projectPageDetails">
             <Grid container item alignItems="center">
@@ -263,7 +270,11 @@ const ProjectsPage = () => {
             </Grid>
             <br />
             <Typography className="projectDetail">
-              A website that showcases not only projects but also my creativity.
+              This website not only showcases my technical projects but also my
+              creativity. I love to create and design and I believe that this
+              portfolio is a true reflection of that.This is especially true
+              when looking ay my landing page where used CSS to bring animation
+              to it
             </Typography>
             <br />
             <Typography className="projectDetail">

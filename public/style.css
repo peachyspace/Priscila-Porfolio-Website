@@ -312,9 +312,15 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-top: 2.7rem;
   padding-bottom: 2rem;
 }
+
+.workSpaceHolder {
+  display: flex;
+  justify-content: center;
+}
 .workSpaceSection {
   /* padding-top: 6rem; */
   position: relative;
+  max-width: 1310px;
 }
 
 /* '.worSpaceSection img' allows to select all the images within the workSpaceSection */
@@ -424,9 +430,36 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
 }
 .miniAboutSectionBg {
-  /*   background: linear-gradient(
-    180deg
-    , rgb(253 218 245) 0%, rgb(241 236 247) 100%); */
+  /*  background-image: url(images/greenBackground.png);
+  background-position: center -133px; */
+  background-color: #85b1b3;
+}
+.aboutHolder {
+  width: 100%;
+  /* margin: 0px auto; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /*  margin-top: 7px; */
+  margin-bottom: 4px;
+}
+.aboutLeft {
+  width: 55%;
+  /* margin-right: 5%; */
+  /* margin-top: 5%; */
+  /* margin-top: 13%; */
+  position: relative;
+  max-width: 347px;
+}
+.aboutRight {
+  /* width: 55%; */
+  margin-left: 5%;
+  margin-top: 8%;
+  position: relative;
+  max-width: 610px;
+}
+/* 
+.miniAboutSectionBg {
   background-image: url(images/greenBackground.png);
   background-position: center -133px;
 }
@@ -434,17 +467,21 @@ here we refrence the label with the class nav__toggle and select the img with th
   width: 90%;
   margin: 0px auto;
   display: flex;
-  /* position:relative; */
   align-items: center;
 }
 .aboutLeft {
   width: 55%;
   margin-right: 5%;
-  /* margin-top: 5%; */
   margin-top: 13%;
   position: relative;
-  /* float: left; */
 }
+.aboutRight {
+  width: 55%;
+  margin-left: 5%;
+  margin-top: 21%;
+  position: relative;
+}
+*/
 .aboutLeft img {
   width: 100%;
 }
@@ -479,29 +516,27 @@ here we refrence the label with the class nav__toggle and select the img with th
     transform: rotate(-3.55deg);
   }
 }
-.aboutRight {
-  width: 55%;
-  margin-left: 5%;
-  margin-top: 21%;
-  position: relative;
-}
+
 .miniIntroHeading {
-  color: #49464e;
+  color: #1c1a20;
   /* font-size: 2.5rem; */
-  font-size: clamp(28px, 2vw, 29px);
+  /* font-size: clamp(28px, 2vw, 29px); */
+  font-size: 1.7rem;
   font-weight: 400;
   font-family: IBM Plex Mono;
   line-height: 1.5;
   letter-spacing: 2px;
 }
 .miniIntroSubheading {
-  color: #49464e;
+  color: #2b272e;
   /*  font-size: 1.1rem; */
-  font-size: clamp(14px, 2vw, 29px);
+  /* font-size: clamp(14px, 2vw, 29px); */
+  font-size: 1.2rem;
   font-weight: 400;
   font-family: IBM Plex Mono;
   line-height: 1.5;
   letter-spacing: 2px;
+  margin-top: 7%;
 }
 .wave {
   width: 100%;
@@ -509,6 +544,17 @@ here we refrence the label with the class nav__toggle and select the img with th
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 140px;
+}
+.landingWave {
+  width: 100%;
+  background-image: url(images/greenWave.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  /* added */
+  /* height: 94px; */
+  /* height: 135px; */
+  height: 82px;
 }
 .bottomWave {
   width: 100%;
@@ -538,9 +584,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-top: 3em;
   padding-bottom: 3em;
   padding-right: 3.5em;
+  justify-content: center;
 }
 .MuiTypography-body1.projSecText {
-  font-size: clamp(14px, 2vw, 29px);
+  /* font-size: clamp(14px, 2vw, 29px); */
 }
 .laptopProjectImage {
   width: 100%;
@@ -552,12 +599,16 @@ here we refrence the label with the class nav__toggle and select the img with th
 .MuiGrid-grid-xs-6.projectDetails {
   margin-top: 1.1%;
   padding-left: 4%;
+  max-width: 610px;
+}
+.MuiGrid-grid-xs-6.projectSecImageGrid {
+  max-width: 400px;
 }
 .MuiTypography-body1.projSecText {
   margin-top: 1em;
 }
 .MuiTypography-body1.projectSecFeatText {
-  font-size: clamp(28px, 2vw, 29px);
+  /* font-size: clamp(28px, 2vw, 29px); */
 }
 .MuiButton-root.projectButton {
   font-family: 'IBM Plex Mono';
@@ -579,8 +630,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   flex-direction: column;
   margin-bottom: 12em;
 }
+.projectHeading {
+  display: flex;
+  justify-content: center;
+}
 .MuiTypography-h1.landingBigFont {
-  padding-left: 5%;
+  /* padding-left: 5%; */
+  /* display: flex; */
+  max-width: 1010px;
+  /* justify-content: center; */
+  margin-right: 26%;
 }
 /* .landingBigFont {
   font-size: clamp(40px, 8vw, 80px);
@@ -609,6 +668,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   color: #49464e;
   margin-top: 1em;
 }
+.MuiTypography-h5.projectBigFont {
+}
 .MuiGrid-container.projectPageSection {
   margin-bottom: 7rem;
 }
@@ -627,7 +688,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-right: 2em;
 }
 .MuiTypography-body1.projectName {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 1.4rem;
   font-weight: 500;
   color: #1c1a20;
   display: inline-block;
@@ -678,7 +740,8 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 
 .MuiTypography-body1.projectDetail {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  font-size: 1.1rem;
   color: #2b272e;
   /* color: #28262b; */
 }
@@ -690,26 +753,30 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .MuiGrid-container.projectHeader {
   margin-top: 4em;
-  padding-bottom: 12%;
+  /* padding-bottom: 12%; */
+  padding-bottom: 4%;
+  justify-content: center;
 }
 .MuiGrid-grid-xs-6.devicesHolder {
   margin-top: 0;
   padding-right: 4rem;
   position: relative;
+  max-width: 570px;
 }
 /* .MuiGrid-grid-xs-6.devicesHolder img {
   width: 90%;
 } */
 .MuiGrid-grid-xs-6.devicesHolder img {
-  max-width: 80%;
+  /* max-width: 80%; */
+  max-width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.devicesHolder img {
+/* .devicesHolder img {
   max-width: 70%;
-}
+} */
 
 .codeEditorBGHolder {
   /*  top: 17%; */
@@ -779,9 +846,102 @@ here we refrence the label with the class nav__toggle and select the img with th
 .MuiGrid-grid-xs-6.projectIntroHeading {
   /*   margin-top: 7rem; */
   padding-left: 1.5rem;
+  /* max-width: 450px; */
+  max-width: 598px;
 }
 .MuiTypography-h5.projectIntroSmallFont {
   margin-top: 1rem;
+}
+
+/* slider */
+
+.MuiGrid-grid-xs-6.projectPageImageGrid {
+  position: relative;
+  /*   box-shadow: 0 10px 20px #00000033;  */
+  /* border: solid blue 2px; */
+  max-width: 510px;
+}
+
+.container-slider {
+  /* margin: 100px 10px 0; */
+  /* overflow: hidden; */
+  /* box-shadow: 0 10px 20px #201b1a;  */
+  /* border: solid red 2px; */
+  height: 100%;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+  /* border: solid yellow 2px; */
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+
+  /* object-fit: cover; */
+}
+.active-anim {
+  opacity: 1;
+}
+.btn-slider {
+  width: 60px;
+  height: 60px;
+  /*   border-radius: 50%;
+  border: 1px solid #2b272e; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border-width: 1px;
+  border-color: transparent;
+}
+.btn-slider img {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+.prev {
+  top: 50%;
+  left: -5px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: -5px;
+  transform: translateY(-60%);
+}
+.cell-prev {
+  top: 50%;
+  left: 27%;
+  transform: translateY(-60%);
+}
+.cell-next {
+  top: 50%;
+  right: 24%;
+  transform: translateY(-60%);
+}
+.container-dots {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  margin: 0 5px;
+  background: #f1f1f1;
+}
+.dot.active {
+  background: rgb(32, 32, 32);
 }
 /* @media screen and (max-width: 480px)  */
 @media screen and (min-width: 120px) and (max-width: 300px) {
@@ -803,6 +963,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   .wave {
     background-size: 301px, 61px;
   }
+  .landingWave {
+    background-size: 301px, 61px;
+    height: 22px;
+  }
   .bottomWave {
     background-size: 301px, 61px;
     /* height: 136px; */
@@ -813,6 +977,13 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .aboutHolder {
     flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutLeft {
+    margin-left: auto;
+    margin-right: auto;
   }
   .laptopProjectImage {
     margin-left: 0%;
@@ -889,8 +1060,9 @@ here we refrence the label with the class nav__toggle and select the img with th
     flex-direction: column;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    /* max-width: 100%; */
-    max-width: 70%;
+    /* max-width: 70%; */
+    min-width: 210px;
+    min-height: 176px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -904,8 +1076,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiGrid-grid-xs-6.projectPageDetails {
     /* max-width: 100%; */
     max-width: 610px;
-    /*     padding-left: 0rem;
-    padding-right: 0rem; */
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .MuiTypography-body1.projectName {
     margin-top: 1.5rem;
@@ -997,7 +1169,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   /* Landing page Section */
   .MuiTypography-h1.landingBigFont {
     margin-left: 0.5em;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: clamp(26px, 2vw, 29px);
     font-weight: 400;
     /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
@@ -1011,6 +1184,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .aboutHolder {
     flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .aboutRight {
     margin-top: 0%;
@@ -1020,8 +1196,22 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: auto;
     margin-left: 0%;
   }
+  .aboutLeft {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .MuiTypography-body1.projectSecFeatText {
+    font-size: clamp(24px, 2vw, 29px);
+  }
+  .MuiTypography-body1.projSecText {
+    font-size: clamp(14px, 2vw, 29px);
+  }
   .wave {
     background-size: 420px 55px;
+  }
+  .landingWave {
+    background-size: 420px 55px;
+    height: 54px;
   }
   .bottomWave {
     background-size: 420px 55px;
@@ -1120,6 +1310,10 @@ here we refrence the label with the class nav__toggle and select the img with th
 
   .MuiGrid-grid-xs-6.projectPageImageGrid {
     /*  max-width: 100%; */
+    min-width: 330px;
+    min-height: 267px;
+    /*     min-width: 150px;
+    min-height: 127px; */
     max-width: 70%;
     justify-content: center;
     margin-left: auto;
@@ -1215,10 +1409,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   /*End of navMenu*/
 
   /* Landing page Section */
+  .projectHeading {
+    justify-content: normal;
+  }
   .MuiTypography-h1.landingBigFont {
     padding-left: 3%;
-    font-size: 1.27rem;
+    /* font-size: 1.27rem; */
+    font-size: clamp(26px, 2vw, 29px);
     font-weight: 400;
+    padding-left: 3%;
+    margin-right: 0%;
     /*  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255 255 255)); */
   }
   .MuiTypography-h4.landingSmallFont {
@@ -1232,11 +1432,21 @@ here we refrence the label with the class nav__toggle and select the img with th
   .wave {
     background-size: 622px 59px;
   }
+  .landingWave {
+    background-size: 622px 84px;
+  }
   .bottomWave {
     background-size: 622px 59px;
   }
   .aboutHolder {
     flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutLeft {
+    margin-left: auto;
+    margin-right: auto;
   }
   .aboutRight {
     margin-top: 0%;
@@ -1246,6 +1456,13 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: auto;
     margin-left: 0%;
   }
+  .MuiTypography-body1.projectSecFeatText {
+    font-size: clamp(24px, 2vw, 29px);
+  }
+  .MuiTypography-body1.projSecText {
+    font-size: clamp(14px, 2vw, 29px);
+  }
+
   .MuiGrid-container.projectSecBox {
     margin: 0px auto;
     width: 90%;
@@ -1338,19 +1555,26 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiTypography-h3.projectBigFont {
     margin-top: 1em;
   }
-  .MuiGrid-grid-xs-6.devicesHolder {
-    max-width: 100%;
-    margin-bottom: 49%;
-  }
+
   .MuiGrid-container.projectHeader {
-    padding-bottom: 15%;
+    padding-bottom: 8%;
+    height: 582px;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
     /*  max-width: 100%; */
+    /* min-width: 428px) and (max-width: 622px */
+    min-width: 400px;
+    min-height: 330px;
     max-width: 70%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    max-width: 100%;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder {
+    max-width: 100%;
   }
   .MuiGrid-grid-xs-6.devicesHolder img {
     max-width: 60%;
@@ -1361,6 +1585,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: 90%;
     display: block;
   }
+
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 100%;
     padding-left: 0rem;
@@ -1417,8 +1642,14 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
 
   /* Landing Page Section */
+  .projectHeading {
+    justify-content: normal;
+    margin-left: 5.4%;
+  }
   .MuiTypography-h1.landingBigFont {
     font-size: 1.7rem;
+    padding-left: 3%;
+    margin-right: 0%;
   }
   .phoneProjectImage {
     margin-left: 8em;
@@ -1426,6 +1657,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   /*   .MuiTypography-body1.projSecText {
     margin-top: 13%;
   } */
+  .MuiGrid-container.projectSecBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0em;
+  }
+  .MuiTypography-body1.projSecText {
+    font-size: 0.9rem;
+  }
+
   .MuiButton-root.moreProjectsButton {
     font-size: 1.15rem;
   }
@@ -1446,9 +1687,27 @@ here we refrence the label with the class nav__toggle and select the img with th
   .wave {
     background-size: 836px 96px;
   }
+  .aboutHolder {
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+  }
+  .aboutLeft {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .aboutRight {
-    /*  margin-top: 10%; */
-    margin-top: 17%;
+    margin-top: 1%;
+    /* margin-top: 17%; */
+  }
+  .MuiGrid-grid-xs-6.projectSecImageGrid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingWave {
+    background-size: 836px 84px;
   }
   .bottomWave {
     background-size: 836px 96px;
@@ -1463,13 +1722,22 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 836px 96px;
   }
   /* Project Page */
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    max-width: 100%;
+  }
   .MuiGrid-grid-xs-6.devicesHolder img {
     max-width: 90%;
   }
   .MuiButton-root.projectPageButton {
     font-size: 0.95rem;
   }
-
+  .MuiGrid-grid-xs-6.devicesHolder {
+    max-width: 100%;
+    margin-bottom: 49%;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    max-width: 60%;
+  }
   .projectWave {
     background-size: 831px 96px;
   }
@@ -1479,8 +1747,27 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiGrid-container.projectPageBox {
     justify-content: center;
   }
+  .MuiTypography-body1.projectName {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+
+  .MuiGrid-container {
+    flex-direction: column;
+  }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 427px; */
+    min-width: 504px;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 100%;
+    padding-left: 3em;
   }
 }
 /* @media only screen and (min-width: 831px) */
@@ -1490,11 +1777,35 @@ here we refrence the label with the class nav__toggle and select the img with th
   /*End of navMenu*/
 
   /* Landing Section */
+  .MuiGrid-container {
+  }
   .miniAboutSectionBg {
     background-position: center -178px;
   }
+  .MuiGrid-container.projectSecBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0em;
+  }
+  .projectHeading {
+    justify-content: normal;
+    margin-left: 8.3%;
+  }
+  .MuiTypography-h1.landingBigFont {
+    margin-right: 0%;
+  }
+  .MuiTypography-body1.projectSecFeatText {
+    font-size: 1.7em;
+  }
+  .MuiGrid-grid-xs-6.projectDetails {
+    max-width: 801.6px;
+  }
   .wave {
     background-size: 994px 96px;
+  }
+  .landingWave {
+    background-size: 994px 84px;
   }
   .bottomWave {
     background-size: 994px 96px;
@@ -1502,8 +1813,25 @@ here we refrence the label with the class nav__toggle and select the img with th
   .upsideDownPurpleWave {
     background-size: 994px 96px;
   }
+  .aboutHolder {
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+  }
+  .aboutLeft {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .aboutRight {
-    margin-top: -70px;
+    /* margin-top: -70px; */
+    margin-top: 2%;
+    max-width: 710px;
+  }
+  .MuiGrid-grid-xs-6.projectSecImageGrid {
+    margin-left: auto;
+    margin-right: auto;
   }
   .MuiTypography-body1.projSecText {
     margin-top: 13%;
@@ -1521,20 +1849,37 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .MuiGrid-container.projectPageBox {
     justify-content: center;
+    /* padding-left: 2em; */
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
+    max-width: 427px;
   }
   /* Footer Section */
   .footerLink {
     font-size: 1.3rem;
   }
+  .MuiGrid-grid-xs-6.footerBox {
+    min-width: 100%;
+  }
 
   /* About Section */
 
   /* Project Page */
+  .MuiGrid-container {
+    flex-direction: column;
+  }
+  .MuiGrid-container.projectHeader {
+  }
+  .MuiGrid-grid-xs-6.projectIntroHeading {
+    max-width: 100%;
+  }
+  .MuiGrid-grid-xs-6.devicesHolder {
+    max-width: 100%;
+    margin-bottom: 38%;
+  }
   .MuiGrid-grid-xs-6.devicesHolder img {
-    width: 110%;
+    max-width: 47%;
   }
   .projectWave {
     background-size: 1101px 96px;
@@ -1548,20 +1893,38 @@ here we refrence the label with the class nav__toggle and select the img with th
     width: 90%;
     display: block;
   }
-  .MuiGrid-container.projectPageBox {
+  /*   .MuiGrid-container.projectPageBox {
     justify-content: center;
-  }
+  } */
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 427px; */
+    min-width: 504px;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .MuiTypography-body1.projectName {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 100%;
+    padding-left: 3em;
   }
 }
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -14%;
+    /* margin-top: -14%; */
   }
   .wave {
     background-size: 1201px 137px;
+  }
+  .landingWave {
+    background-size: 1201px 84px;
   }
   .bottomWave {
     background-size: 1201px 84px;
@@ -1580,26 +1943,35 @@ here we refrence the label with the class nav__toggle and select the img with th
   .projectBottomWave {
     background-size: 1201px 96px;
   }
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    max-width: 60%;
+  }
   .MuiGrid-container.projectPageBox {
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /*  max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
-    max-width: 610px;
+    max-width: 525px;
+    padding-left: 4em;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -14%;
+    /* margin-top: -14%; */
   }
   .MuiTypography-body1.projSecText {
     margin-top: 13%;
   }
   .wave {
     background-size: 1301px 137px;
+  }
+  .landingWave {
+    background-size: 1301px 84px;
   }
   .bottomWave {
     background-size: 1301px 84px;
@@ -1615,11 +1987,14 @@ here we refrence the label with the class nav__toggle and select the img with th
   .projectBottomWave {
     background-size: 1301px 96px;
   }
+  .MuiGrid-grid-xs-6.devicesHolder img {
+    max-width: 61%;
+  }
   .MuiGrid-container.projectPageBox {
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1628,10 +2003,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1301px) and (max-width: 1400px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 1401px 137px;
+  }
+  .landingWave {
+    background-size: 1401px 84px;
   }
   .bottomWave {
     background-size: 1401px 84px;
@@ -1654,7 +2032,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1663,10 +2041,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1401px) and (max-width: 1500px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 1501px 137px;
+  }
+  .landingWave {
+    background-size: 1501px 84px;
   }
   .bottomWave {
     background-size: 1501px 84px;
@@ -1689,7 +2070,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1698,10 +2079,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1501px) and (max-width: 1600px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 1601px 137px;
+  }
+  .landingWave {
+    background-size: 1601px 84px;
   }
   .bottomWave {
     background-size: 1601px 84px;
@@ -1724,7 +2108,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1733,10 +2117,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1601px) and (max-width: 1700px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 1701px 137px;
+  }
+  .landingWave {
+    background-size: 1701px 84px;
   }
   .bottomWave {
     background-size: 1701px 84px;
@@ -1759,7 +2146,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1768,10 +2155,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1701px) and (max-width: 1800px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 1801px 137px;
+  }
+  .landingWave {
+    background-size: 1801px 84px;
   }
   .bottomWave {
     background-size: 1801px 84px;
@@ -1795,7 +2185,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1804,10 +2194,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1801px) and (max-width: 1900px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /*  margin-top: -29%; */
   }
   .wave {
     background-size: 1901px 137px;
+  }
+  .landingWave {
+    background-size: 1901px 84px;
   }
   .bottomWave {
     background-size: 1901px 84px;
@@ -1831,7 +2224,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1840,10 +2233,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 1901px) and (max-width: 2000px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2001px 137px;
+  }
+  .landingWave {
+    background-size: 2001px 84px;
   }
   .bottomWave {
     background-size: 2001px 84px;
@@ -1867,7 +2263,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1876,10 +2272,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2001px) and (max-width: 2100px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2101px 137px;
+  }
+  .landingWave {
+    background-size: 2101px 84px;
   }
   .bottomWave {
     background-size: 2101px 84px;
@@ -1903,7 +2302,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1912,10 +2311,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2101px) and (max-width: 2200px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2201px 137px;
+  }
+  .landingWave {
+    background-size: 2201px 84px;
   }
   .bottomWave {
     background-size: 2201px 84px;
@@ -1939,7 +2341,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1948,10 +2350,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2201px) and (max-width: 2300px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2301px 137px;
+  }
+  .landingWave {
+    background-size: 2301px 84px;
   }
   .bottomWave {
     background-size: 2301px 84px;
@@ -1974,7 +2379,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -1984,10 +2389,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2301px) and (max-width: 2400px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2401px 137px;
+  }
+  .landingWave {
+    background-size: 2401px 84px;
   }
   .bottomWave {
     background-size: 2401px 84px;
@@ -2011,7 +2419,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -2020,10 +2428,16 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2401px) and (max-width: 2500px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2501px 137px;
+  }
+  .landingWave {
+    background-size: 2501px 84px;
+  }
+  .landingWave {
+    background-size: 2501px 84px;
   }
   .bottomWave {
     background-size: 2501px 84px;
@@ -2046,7 +2460,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -2056,10 +2470,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2501px) and (max-width: 2600px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2601px 137px;
+  }
+  .landingWave {
+    background-size: 2601px 84px;
   }
   .bottomWave {
     background-size: 2601px 84px;
@@ -2082,7 +2499,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;
@@ -2091,10 +2508,13 @@ here we refrence the label with the class nav__toggle and select the img with th
 @media screen and (min-width: 2601px) and (max-width: 2700px) {
   /* LandingPage */
   .aboutRight {
-    margin-top: -29%;
+    /* margin-top: -29%; */
   }
   .wave {
     background-size: 2701px 137px;
+  }
+  .landingWave {
+    background-size: 2701px 84px;
   }
   .bottomWave {
     background-size: 2701px 84px;
@@ -2117,7 +2537,239 @@ here we refrence the label with the class nav__toggle and select the img with th
     justify-content: center;
   }
   .MuiGrid-grid-xs-6.projectPageImageGrid {
-    max-width: 410px;
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 2701px) and (max-width: 2800px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 2801px 137px;
+  }
+  .landingWave {
+    background-size: 2801px 84px;
+  }
+  .bottomWave {
+    background-size: 2801px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2801px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 2801px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2801px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 2801px) and (max-width: 2900px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 2901px 137px;
+  }
+  .landingWave {
+    background-size: 2901px 84px;
+  }
+  .bottomWave {
+    background-size: 2901px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 2901px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 2901px 96px;
+  }
+  .projectBottomWave {
+    background-size: 2901px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 2901px) and (max-width: 3000px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 3001px 137px;
+  }
+  .landingWave {
+    background-size: 3001px 84px;
+  }
+  .bottomWave {
+    background-size: 3001px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 3001px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 3001px 96px;
+  }
+  .projectBottomWave {
+    background-size: 3001px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+
+@media screen and (min-width: 3001px) and (max-width: 3100px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 3101px 137px;
+  }
+  .landingWave {
+    background-size: 3101px 84px;
+  }
+  .bottomWave {
+    background-size: 3101px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 3101px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 3101px 96px;
+  }
+  .projectBottomWave {
+    background-size: 3101px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 3101px) and (max-width: 3200px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 3201px 137px;
+  }
+  .landingWave {
+    background-size: 3201px 84px;
+  }
+  .bottomWave {
+    background-size: 3201px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 3201px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 3201px 96px;
+  }
+  .projectBottomWave {
+    background-size: 3201px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
+  }
+  .MuiGrid-grid-xs-6.projectPageDetails {
+    max-width: 610px;
+  }
+}
+@media screen and (min-width: 3201px) and (max-width: 3300px) {
+  /* LandingPage */
+  .aboutRight {
+    /* margin-top: -29%; */
+  }
+  .wave {
+    background-size: 3301px 137px;
+  }
+  .landingWave {
+    background-size: 3301px 84px;
+  }
+  .bottomWave {
+    background-size: 3301px 84px;
+  }
+  .upsideDownPurpleWave {
+    background-size: 3301px 98px;
+  }
+  .MuiTypography-body1.projSecText {
+    margin-top: 13%;
+  }
+  /* Project Page */
+  .projectWave {
+    /* background-size: 2701px 323px; */
+    background-size: 3301px 96px;
+  }
+  .projectBottomWave {
+    background-size: 3301px 96px;
+  }
+  .MuiGrid-container.projectPageBox {
+    justify-content: center;
+  }
+  .MuiGrid-grid-xs-6.projectPageImageGrid {
+    /* max-width: 410px; */
   }
   .MuiGrid-grid-xs-6.projectPageDetails {
     max-width: 610px;

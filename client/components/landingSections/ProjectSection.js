@@ -35,7 +35,7 @@ const ProjectSection = () => {
         className="projectSecBox"
         style={{backgroundColor: '#e5d5ff'}}
       >
-        <Grid item xs={6} className="projectImageGrid">
+        <Grid item xs={6} className="projectSecImageGrid">
           <img src={greenSlantedDesktop} className="laptopProjectImage" />
         </Grid>
         <Grid item xs={6} className="projectDetails">
