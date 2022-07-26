@@ -41,6 +41,7 @@ const MBSlider = () => {
       <div className="container-dots">
         {Array.from({length: MoodboardSliderData.length}).map((item, index) => (
           <div
+            key={MoodboardSliderData[index].id}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? 'dot active' : 'dot'}
           />

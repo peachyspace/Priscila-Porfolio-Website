@@ -24,8 +24,8 @@ const FooterSection = () => {
   return (
     <Grid
       container
-      rowSpacing={1}
-      columnSpacing={{xs: 1, sm: 2, md: 3}}
+      /* rowSpacing={1} */
+      /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
       className="footer"
       style={{backgroundColor: '#e5ddff', textAlign: 'center'}}
     >

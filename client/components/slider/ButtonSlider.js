@@ -2,7 +2,6 @@ import React from 'react'
 import leftArrowIcon from '../../../public/images/leftArrowIcon.png'
 import rightArrowIcon from '../../../public/images/rightArrowIcon.png'
 const ButtonSlider = ({moveSlider, direction}) => {
-  console.log(direction)
   return (
     <button
       type="button"

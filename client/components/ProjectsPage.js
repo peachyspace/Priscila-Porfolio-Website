@@ -25,8 +25,8 @@ const ProjectsPage = () => {
         <Grid
           className="projectHeader"
           container
-          rowSpacing={1}
-          columnSpacing={{xs: 1, sm: 2, md: 3}}
+          /* rowSpacing={1} */
+          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
         >
           <Grid item xs={6} className="projectIntroHeading">
             <Typography
@@ -69,8 +69,8 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          rowSpacing={1}
-          columnSpacing={{xs: 1, sm: 2, md: 3}}
+          /* rowSpacing={1} */
+          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -134,8 +134,8 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          rowSpacing={1}
-          columnSpacing={{xs: 1, sm: 2, md: 3}}
+          /* rowSpacing={1} */
+          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -188,8 +188,8 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          rowSpacing={1}
-          columnSpacing={{xs: 1, sm: 2, md: 3}}
+          /* rowSpacing={1} */
+          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -242,8 +242,8 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          rowSpacing={1}
-          columnSpacing={{xs: 1, sm: 2, md: 3}}
+          /* rowSpacing={1} */
+          /*  columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >

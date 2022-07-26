@@ -42,6 +42,7 @@ const TSlider = () => {
         {Array.from({length: TigerSugarSliderData.length}).map(
           (item, index) => (
             <div
+              key={TigerSugarSliderData[index].id}
               onClick={() => moveDot(index + 1)}
               className={slideIndex === index + 1 ? 'dot active' : 'dot'}
             />

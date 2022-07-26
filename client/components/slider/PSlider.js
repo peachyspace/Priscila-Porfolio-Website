@@ -41,6 +41,7 @@ const PSlider = () => {
       <div className="container-dots">
         {Array.from({length: PortfolioSliderData.length}).map((item, index) => (
           <div
+            key={PortfolioSliderData[index].id}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? 'dot active' : 'dot'}
           />

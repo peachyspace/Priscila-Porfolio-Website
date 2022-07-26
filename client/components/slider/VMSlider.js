@@ -41,6 +41,7 @@ const VMSlider = () => {
       <div className="container-dots">
         {Array.from({length: VitamonSliderData.length}).map((item, index) => (
           <div
+            key={VitamonSliderData[index].id}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? 'dot active' : 'dot'}
           />

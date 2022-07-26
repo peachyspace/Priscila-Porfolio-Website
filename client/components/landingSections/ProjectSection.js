@@ -27,8 +27,8 @@ const ProjectSection = () => {
       </Grid>
       <Grid
         container
-        rowSpacing={1}
-        columnSpacing={{xs: 1, sm: 2, md: 3}}
+        /* rowSpacing={1} */
+        /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
         className="projectSecBox"
         style={{backgroundColor: '#e5d5ff'}}
       >
@@ -47,7 +47,7 @@ const ProjectSection = () => {
       <Grid
         container
         className="moreProjectsButtonSection"
-        rowSpacing={1}
+        /* rowSpacing={1} */
         style={{backgroundColor: '#e5d5ff'}}
       >
         <Button
