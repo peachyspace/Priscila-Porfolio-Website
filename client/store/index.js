@@ -6,13 +6,12 @@ import user from './user'
 
 const reducer = combineReducers({user})
 let middleware = []
-//const logger = createLogger({collapsed:true})
 if (process.env.NODE_ENV === 'development') {
   middleware = composeWithDevTools(
     applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
   )
 } else {
-  middleware = [...middleware, thunkMiddleware]
+  middleware = composeWithDevTools(applyMiddleware(thunkMiddleware))
 }
 
 const store = createStore(reducer, middleware)
