@@ -430,8 +430,6 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
 }
 .miniAboutSectionBg {
-  /*  background-image: url(images/greenBackground.png);
-  background-position: center -133px; */
   background-color: #85b1b3;
 }
 .aboutHolder {
@@ -460,7 +458,6 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 /* 
 .miniAboutSectionBg {
-  background-image: url(images/greenBackground.png);
   background-position: center -133px;
 }
 .aboutHolder {
@@ -833,14 +830,6 @@ here we refrence the label with the class nav__toggle and select the img with th
   position: absolute;
   z-index: 104;
   width: 78%;
-}
-
-.websiteBoxesHolder {
-  top: 30%;
-  left: 22%;
-  position: absolute;
-  z-index: 104;
-  width: 47%;
 }
 
 .MuiGrid-grid-xs-6.projectIntroHeading {

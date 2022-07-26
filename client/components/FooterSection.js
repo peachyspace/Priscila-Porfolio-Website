@@ -5,11 +5,10 @@ import Button from '@material-ui/core/Button'
 import Link from '@material-ui/core/Link'
 import {makeStyles} from '@material-ui/core/styles'
 import email_icon from '../../public/images/email_icon.png'
-import linkedin_icon from '../../public/images/linkedin_icon.png'
+/* import linkedin_icon from '../../public/images/linkedin_icon.png' */
 import purprleLinkedinIcon from '../../public/images/purprleLinkedinIcon.png'
 import greenMail_Icon from '../../public/images/greenMail_Icon.png'
 import darkGreenMail_icon from '../../public/images/darkGreenMail_icon.png'
-import lightGreenMail_icon from '../../public/images/lightGreenMail_icon.png'
 import purpleGitHubIcon from '../../public/images/purpleGitHubIcon.png'
 
 const useStyles = makeStyles(() => ({
