@@ -78,7 +78,7 @@ const ProjectsPage = () => {
             <MBSlider />
           </Grid>
           <Grid item xs={6} className="projectPageDetails">
-            <Grid container item alignItems="center" flex-direction="row">
+            <Grid item alignItems="center" flex-direction="row">
               <Typography className="projectName" variant="body1">
                 Moodboard |<Box component="span" className="fullstackTitle1">
                   | Full Stack

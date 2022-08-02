@@ -561,6 +561,14 @@ here we refrence the label with the class nav__toggle and select the img with th
   background-size: 100% 140px;
   height: 94px;
 }
+.pastelPurpleFlippedWave {
+  width: 100%;
+  background-image: url(images/pastelPurpleFlippedWave.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  height: 94px;
+}
 
 .upsideDownPurpleWave {
   width: 100%;
@@ -580,7 +588,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 .projectSecBox {
   padding-top: 3em;
   padding-bottom: 3em;
-  padding-right: 3.5em;
+  /* padding-right: 3.5em; */
   justify-content: center;
 }
 .MuiTypography-body1.projSecText {
@@ -932,6 +940,62 @@ here we refrence the label with the class nav__toggle and select the img with th
 .dot.active {
   background: rgb(32, 32, 32);
 }
+
+/*About Me Page*/
+.BannerHolder {
+  display: flex;
+  justify-content: center;
+}
+.amBannerSection {
+  position: relative;
+  /* max-width: 1310px; */
+  max-width: 786px;
+}
+
+.amBannerSection img {
+  width: 100%;
+  height: auto;
+}
+.PrisPhotoHolder {
+  position: absolute;
+  /* width: 22%; */
+  width: 67%;
+  /* top: 15%; */
+  top: 25%;
+  left: 14%;
+  z-index: 100;
+}
+.leftLeaveHolder {
+  position: absolute;
+  /* width: 22%; */
+  width: 33%;
+  /* top: 15%; */
+  top: 17%;
+  left: 4%;
+  z-index: 99;
+}
+.rightLeaveHolder {
+  position: absolute;
+  /* width: 22%; */
+  width: 33%;
+  /* top: 15%; */
+  top: 17%;
+  right: 8%;
+  z-index: 99;
+}
+.aboutMePageBox {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+.aboutMeTextHolder {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
 /* @media screen and (max-width: 480px)  */
 @media screen and (min-width: 120px) and (max-width: 300px) {
   /* Landing Page */
@@ -961,6 +1025,10 @@ here we refrence the label with the class nav__toggle and select the img with th
     /* height: 136px; */
   }
   .upsideDownPurpleWave {
+    background-size: 301px, 61px;
+    height: 22px;
+  }
+  .pastelPurpleFlippedWave {
     background-size: 301px, 61px;
     height: 22px;
   }
@@ -1219,6 +1287,11 @@ here we refrence the label with the class nav__toggle and select the img with th
   .miniIntroSubheading {
     font-size: 0.86rem;
     margin-top: 5%;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 420px 55px;
+    /* height: 86px; */
+    height: 51px;
   }
 
   .upsideDownPurpleWave {
@@ -1513,6 +1586,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiButton-root.moreProjectsButton {
     font-size: 0.9rem;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 622px 59px;
+    height: 57px;
+  }
   .upsideDownPurpleWave {
     background-size: 622px 59px;
     height: 57px;
@@ -1701,6 +1778,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 836px 96px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 836px 96px;
+  }
   .upsideDownPurpleWave {
     background-size: 836px 96px;
   }
@@ -1797,6 +1877,12 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 994px 84px;
   }
   .bottomWave {
+    background-size: 994px 96px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 994px 96px;
+  }
+  .pastelPurpleFlippedWave {
     background-size: 994px 96px;
   }
   .upsideDownPurpleWave {
@@ -1918,6 +2004,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 1201px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 1201px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 1201px 98px;
   }
@@ -1965,6 +2054,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 1301px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 1301px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 1301px 98px;
   }
@@ -2002,6 +2094,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 1401px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 1401px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 1401px 98px;
@@ -2041,6 +2136,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 1501px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 1501px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 1501px 98px;
   }
@@ -2078,6 +2176,12 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 1601px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 1601px 98px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 1601px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 1601px 98px;
@@ -2117,6 +2221,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 1701px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 1701px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 1701px 98px;
   }
@@ -2154,6 +2261,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 1801px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 1801px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 1801px 98px;
@@ -2194,6 +2304,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 1901px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 1901px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 1901px 98px;
   }
@@ -2232,6 +2345,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 2001px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 2001px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 2001px 98px;
@@ -2272,6 +2388,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 2101px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 2101px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 2101px 98px;
   }
@@ -2310,6 +2429,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 2201px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 2201px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 2201px 98px;
@@ -2350,6 +2472,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 2301px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 2301px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 2301px 98px;
   }
@@ -2388,6 +2513,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 2401px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 2401px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 2401px 98px;
@@ -2431,6 +2559,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 2501px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 2501px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 2501px 98px;
   }
@@ -2470,6 +2601,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 2601px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 2601px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 2601px 98px;
   }
@@ -2507,6 +2641,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 2701px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 2701px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 2701px 98px;
@@ -2547,6 +2684,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 2801px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 2801px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 2801px 98px;
   }
@@ -2585,6 +2725,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 2901px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 2901px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 2901px 98px;
@@ -2625,6 +2768,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 3001px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 3001px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 3001px 98px;
   }
@@ -2664,6 +2810,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 3101px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 3101px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 3101px 98px;
   }
@@ -2702,6 +2851,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .bottomWave {
     background-size: 3201px 84px;
   }
+  .pastelPurpleFlippedWave {
+    background-size: 3201px 98px;
+  }
   .upsideDownPurpleWave {
     background-size: 3201px 98px;
   }
@@ -2739,6 +2891,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .bottomWave {
     background-size: 3301px 84px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 3301px 98px;
   }
   .upsideDownPurpleWave {
     background-size: 3301px 98px;
