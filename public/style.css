@@ -518,22 +518,27 @@ here we refrence the label with the class nav__toggle and select the img with th
   color: #1c1a20;
   /* font-size: 2.5rem; */
   /* font-size: clamp(28px, 2vw, 29px); */
-  font-size: 1.7rem;
+  font-size: 1.82rem;
   font-weight: 400;
   font-family: IBM Plex Mono;
   line-height: 1.5;
   letter-spacing: 2px;
 }
+.miniIntroHeading:hover {
+  color: #f1eafc;
+}
+
 .miniIntroSubheading {
   color: #2b272e;
-  /*  font-size: 1.1rem; */
-  /* font-size: clamp(14px, 2vw, 29px); */
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   font-family: IBM Plex Mono;
   line-height: 1.5;
   letter-spacing: 2px;
   margin-top: 7%;
+}
+.miniIntroSubheading:hover {
+  color: #f1eafc;
 }
 .wave {
   width: 100%;
@@ -591,8 +596,17 @@ here we refrence the label with the class nav__toggle and select the img with th
   /* padding-right: 3.5em; */
   justify-content: center;
 }
-.MuiTypography-body1.projSecText {
-  /* font-size: clamp(14px, 2vw, 29px); */
+.MuiTypography-body1.projectSecFeatTextTitle {
+  font-size: 1.75em;
+}
+.MuiTypography-body1.projectSecFeatTextTitle:hover {
+  color: azure;
+}
+.MuiTypography-body1.projectSecFeatText:hover {
+  color: azure;
+}
+.MuiTypography-body1.projSecText:hover {
+  color: azure;
 }
 .laptopProjectImage {
   width: 100%;
@@ -613,7 +627,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   margin-top: 1em;
 }
 .MuiTypography-body1.projectSecFeatText {
-  /* font-size: clamp(28px, 2vw, 29px); */
+  font-size: 1.53em;
 }
 .MuiButton-root.projectButton {
   font-family: 'IBM Plex Mono';
@@ -645,6 +659,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   max-width: 1010px;
   /* justify-content: center; */
   margin-right: 26%;
+}
+.MuiTypography-h1.landingBigFont:hover {
+  color: #85b1b3;
 }
 /* .landingBigFont {
   font-size: clamp(40px, 8vw, 80px);
@@ -919,7 +936,7 @@ here we refrence the label with the class nav__toggle and select the img with th
 }
 .cell-next {
   top: 50%;
-  right: 24%;
+  right: 26%;
   transform: translateY(-60%);
 }
 .container-dots {
@@ -961,7 +978,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   /* width: 22%; */
   width: 67%;
   /* top: 15%; */
-  top: 25%;
+  top: 23%;
   left: 14%;
   z-index: 100;
 }
@@ -970,18 +987,50 @@ here we refrence the label with the class nav__toggle and select the img with th
   /* width: 22%; */
   width: 33%;
   /* top: 15%; */
-  top: 17%;
+  top: 14%;
   left: 4%;
   z-index: 99;
+}
+.moveLeft {
+  animation-name: moveLeft;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveLeft {
+  0% {
+    transform: rotate(-3.55deg);
+  }
+  50% {
+    transform: rotate(3.55deg);
+  }
+  100% {
+    transform: rotate(-3.55deg);
+  }
 }
 .rightLeaveHolder {
   position: absolute;
   /* width: 22%; */
   width: 33%;
   /* top: 15%; */
-  top: 17%;
+  top: 14%;
   right: 8%;
   z-index: 99;
+}
+.moveRight {
+  animation-name: moveRight;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveRight {
+  0% {
+    transform: rotate(3.55deg);
+  }
+  50% {
+    transform: rotate(-3.55deg);
+  }
+  100% {
+    transform: rotate(3.55deg);
+  }
 }
 .aboutMePageBox {
   padding-top: 3rem;
@@ -995,7 +1044,19 @@ here we refrence the label with the class nav__toggle and select the img with th
   padding-left: 64px;
   padding-right: 64px;
 }
-
+.MuiTypography-body1.aboutTitle {
+  font-size: clamp(32px, 2vw, 80px);
+  /* clamp(40px, 4vw, 80px) */
+}
+.MuiTypography-body1.aboutTitle:hover {
+  color: #4e7d8e;
+}
+.MuiTypography-body1.aboutBodyText {
+  font-size: clamp(17px, 2vw, 20px);
+}
+.MuiTypography-body1.aboutBodyText:hover {
+  color: #4e7d8e;
+}
 /* @media screen and (max-width: 480px)  */
 @media screen and (min-width: 120px) and (max-width: 300px) {
   /* Landing Page */
@@ -1030,7 +1091,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .pastelPurpleFlippedWave {
     background-size: 301px, 61px;
-    height: 22px;
+    height: 24px;
   }
   .aboutHolder {
     flex-direction: column;
@@ -1053,6 +1114,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     /* font-size: 1.1rem; */
     font-size: clamp(16px, 2vw, 29px);
   }
+
   .miniIntroSubheading {
     font-size: clamp(11px, 2vw, 29px);
     margin-top: 5%;
@@ -1077,7 +1139,9 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-left: 0%;
     margin-top: 1em;
   }
-
+  .MuiTypography-body1.projectSecFeatTextTitle {
+    font-size: clamp(16px, 2vw, 29px);
+  }
   .MuiTypography-body1.projSecText {
     font-size: clamp(11px, 2vw, 29px);
   }
@@ -1088,7 +1152,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     align-items: center;
   }
   .MuiTypography-body1.projectSecFeatText {
-    font-size: clamp(16px, 2vw, 29px);
+    font-size: clamp(14px, 2vw, 29px);
   }
 
   /* Project Page */
@@ -1097,7 +1161,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     font-size: 0.9em;
   }
   .MuiTypography-h5.projectBigFont {
-    font-size: 0.7em;
+    font-size: 0.3em;
   }
   .MuiTypography-body1.projectName {
     font-size: 0.8rem;
@@ -1187,6 +1251,12 @@ here we refrence the label with the class nav__toggle and select the img with th
     height: 200px;
   }
 
+  /* About Me */
+  .aboutMeTextHolder {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   /* Footer Section */
 
   .MuiGrid-grid-xs-6.footerBox {
@@ -1258,7 +1328,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     margin-right: auto;
   }
   .MuiTypography-body1.projectSecFeatText {
-    font-size: clamp(24px, 2vw, 29px);
+    font-size: clamp(17px, 2vw, 29px);
   }
   .MuiTypography-body1.projSecText {
     font-size: clamp(14px, 2vw, 29px);
@@ -1269,6 +1339,11 @@ here we refrence the label with the class nav__toggle and select the img with th
   .landingWave {
     background-size: 420px 55px;
     height: 54px;
+  }
+  .pastelPurpleFlippedWave {
+    background-size: 420px 53px;
+    /* height: 86px; */
+    height: 51px;
   }
   .bottomWave {
     background-size: 420px 55px;
@@ -1288,11 +1363,6 @@ here we refrence the label with the class nav__toggle and select the img with th
     font-size: 0.86rem;
     margin-top: 5%;
   }
-  .pastelPurpleFlippedWave {
-    background-size: 420px 55px;
-    /* height: 86px; */
-    height: 51px;
-  }
 
   .upsideDownPurpleWave {
     background-size: 420px 55px;
@@ -1306,6 +1376,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiGrid-grid-xs-6.projectIntroHeading {
     /*  margin-top: 1rem; */
     padding-left: 1rem;
+  }
+  .MuiTypography-body1.projectSecFeatTextTitle {
+    font-size: 1.18em;
   }
   .MuiButton-root.projectButton {
     margin-top: 8%;
@@ -1455,6 +1528,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   .projectBottomWave {
     background-size: 428px 96px;
   }
+  /* About Me */
 }
 @media screen and (min-width: 428px) and (max-width: 622px) {
   html,
@@ -1519,7 +1593,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     margin-left: 0%;
   }
   .MuiTypography-body1.projectSecFeatText {
-    font-size: clamp(24px, 2vw, 29px);
+    font-size: clamp(22px, 2vw, 29px);
   }
   .MuiTypography-body1.projSecText {
     font-size: clamp(14px, 2vw, 29px);
@@ -1553,6 +1627,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiGrid-grid-xs-6.projectIntroHeading {
     /* margin-top: 1rem; */
     padding-left: 1rem;
+  }
+  .MuiTypography-body1.projectSecFeatTextTitle {
+    font-size: clamp(24px, 2vw, 29px);
   }
   .MuiGrid-container {
     /* display: flex; */
@@ -1729,8 +1806,11 @@ here we refrence the label with the class nav__toggle and select the img with th
     margin-right: auto;
     padding-right: 0em;
   }
+  /*   .MuiTypography-body1.projectSecFeatTextTitle{
+    font-size: 1.65em;
+  } */
   .MuiTypography-body1.projSecText {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .MuiButton-root.moreProjectsButton {
@@ -1744,10 +1824,10 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-position: center -178px;
   }
   .miniIntroHeading {
-    font-size: 1.29rem;
+    font-size: 1.75rem;
   }
   .miniIntroSubheading {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 5%;
   }
   .wave {
@@ -1864,9 +1944,9 @@ here we refrence the label with the class nav__toggle and select the img with th
   .MuiTypography-h1.landingBigFont {
     margin-right: 0%;
   }
-  .MuiTypography-body1.projectSecFeatText {
+  /*   .MuiTypography-body1.projectSecFeatText {
     font-size: 1.7em;
-  }
+  } */
   .MuiGrid-grid-xs-6.projectDetails {
     max-width: 801.6px;
   }
@@ -1909,7 +1989,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     margin-right: auto;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   .MuiButton-root.projectButton {
     font-size: 1.2rem;
@@ -2011,7 +2091,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1201px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2043,7 +2123,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     /* margin-top: -14%; */
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   .wave {
     background-size: 1301px 137px;
@@ -2102,7 +2182,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1401px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2143,7 +2223,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1501px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2187,7 +2267,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1601px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2228,7 +2308,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1701px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2269,7 +2349,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1801px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2311,7 +2391,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 1901px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2353,7 +2433,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2001px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2395,7 +2475,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2101px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2437,7 +2517,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2201px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2479,7 +2559,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2301px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2521,7 +2601,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2401px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
 
   /* Project Page */
@@ -2566,7 +2646,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2501px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2608,7 +2688,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2601px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2649,7 +2729,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2701px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2691,7 +2771,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2801px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2733,7 +2813,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 2901px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2775,7 +2855,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 3001px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2817,7 +2897,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 3101px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2858,7 +2938,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 3201px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {
@@ -2899,7 +2979,7 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 3301px 98px;
   }
   .MuiTypography-body1.projSecText {
-    margin-top: 13%;
+    margin-top: 2%;
   }
   /* Project Page */
   .projectWave {

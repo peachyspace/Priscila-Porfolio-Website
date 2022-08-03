@@ -36,20 +36,20 @@ export default createTheme({
       color: '#49464e'
     },
     h2: {
-      fontSize: '3.4rem',
+      fontSize: '2.3rem',
       fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     h3: {
-      fontSize: '2.8rem',
+      fontSize: '2.2rem',
       fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
       letterSpacing: 5
     },
     h4: {
-      fontSize: '2.1rem',
-      fontWeight: 300,
+      fontSize: '1.79rem',
+      fontWeight: 400,
       fontFamily: 'IBM Plex Mono',
       letterSpacing: 2
     },

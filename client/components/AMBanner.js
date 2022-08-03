@@ -13,10 +13,10 @@ const AMBanner = ({}) => {
         <img src={priscilaWebPic} />
       </div>
       <div className="leftLeaveHolder">
-        <img src={leftGreenLeaves} />
+        <img src={leftGreenLeaves} className="moveLeft" />
       </div>
       <div className="rightLeaveHolder">
-        <img src={rightGreenLeaves} />
+        <img src={rightGreenLeaves} className="moveRight" />
       </div>
     </div>
   )

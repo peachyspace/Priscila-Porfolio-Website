@@ -11,20 +11,19 @@ const ProjectSection = () => {
   }
   return (
     <Grid className="projectSec">
-      <Grid className="projectHeading">
+      {/*       <Grid className="projectHeading">
         <Typography
           variant="h1"
           className="landingBigFont"
           style={{
             paddingTop: '12px',
             marginBottom: '20px',
-            /* marginLeft: '0.5em', */
             background: 'none'
           }}
         >
           Featured Project
         </Typography>
-      </Grid>
+      </Grid> */}
       <Grid
         container
         /* rowSpacing={1} */
@@ -36,6 +35,12 @@ const ProjectSection = () => {
           <img src={greenSlantedDesktop} className="laptopProjectImage" />
         </Grid>
         <Grid item xs={6} className="projectDetails">
+          <Typography
+            className="projectSecFeatTextTitle"
+            style={{marginBottom: '2rem'}}
+          >
+            Featured Project
+          </Typography>
           <Typography className="projectSecFeatText">Moodboard</Typography>
           <Typography className="projSecText">
             A workspace that allows users to unlesh their creativity by creating
