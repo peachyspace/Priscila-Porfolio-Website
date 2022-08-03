@@ -8,7 +8,8 @@ import {
   UserHome,
   LandingPage,
   ProjectsPage,
-  AboutMe
+  AboutMe,
+  ContactMePage
 } from './components'
 import {me} from './store'
 
@@ -30,6 +31,7 @@ class Routes extends Component {
         <Route path="/signup" component={Signup} />
         <Route path="/projects" component={ProjectsPage} />
         <Route path="/about" component={AboutMe} />
+        <Route path="/contact" component={ContactMePage} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

@@ -48,7 +48,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="navMenuAnchorText">
+              <a href="/contact" className="navMenuAnchorText">
                 Contact
               </a>
             </li>

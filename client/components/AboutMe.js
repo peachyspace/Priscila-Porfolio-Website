@@ -32,8 +32,7 @@ const AboutMe = ({}) => {
           </Typography>
         </Grid>
       </Grid>
-      <div className="upsideDownPurpleWave" />
-      <div className="" style={{marginBottom: '7.4rem'}} />
+      <div className="upsideDownPurpleWave" style={{marginBottom: '7.4rem'}} />
     </div>
   )
 }
