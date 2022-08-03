@@ -6,13 +6,30 @@ import Typography from '@material-ui/core/Typography'
 import TextField from '@material-ui/core/TextField'
 
 const ContactForm = ({
+  validations,
   name,
   handleNameChange,
   email,
   handleEmailChange,
+  errors,
+  setErrors,
+  emailValidation,
   messege,
-  handleMessegeChange
+  handleMessegeChange,
+  submitMsg,
+  onSubmitnClick
 }) => {
+  const validate = (validationsArray, value, string) => {
+    //map over the validationsArray
+    //validationsArray is an array of validators and those validators return error messeges
+
+    setErrors(() => ({
+      ...errors,
+      [string]: validationsArray
+        .map(errorFor => errorFor(value))
+        .filter(errorMsg => errorMsg.length > 0)
+    }))
+  }
   return (
     <div className="formDiv">
       <div className="pastelPurpleFlippedWave" />
@@ -30,10 +47,10 @@ const ContactForm = ({
             id="name"
             label="Name"
             name="name"
-            /* onBlur={() => validate(validations, firstName, 'firstName')}
+            onBlur={() => validate(validations, name, 'name')}
             helperText={
-              errors.firstName.length === 0 ? null : errors.firstName.join(', ')
-            } */
+              errors.name.length === 0 ? null : errors.name.join(', ')
+            }
           />
           <TextField
             /* error={errors.firstName.length !== 0} */
@@ -48,10 +65,10 @@ const ContactForm = ({
              */
             label="Email"
             name="email"
-            /* onBlur={() => validate(validations, firstName, 'firstName')}
+            onBlur={() => validate(emailValidation, email, 'email')}
             helperText={
-              errors.firstName.length === 0 ? null : errors.firstName.join(', ')
-            } */
+              errors.email.length === 0 ? null : errors.email.join(', ')
+            }
           />
           <TextField
             /* error={errors.firstName.length !== 0} */
@@ -66,26 +83,33 @@ const ContactForm = ({
             name="Messege"
             multiline={true}
             minRows={4}
-
-            /* onBlur={() => validate(validations, firstName, 'firstName')}
+            onBlur={() => validate(validations, messege, 'messege')}
             helperText={
-              errors.firstName.length === 0 ? null : errors.firstName.join(', ')
-            } */
+              errors.messege.length === 0 ? null : errors.messege.join(', ')
+            }
           />
-          <Button
-            type="submit"
-            fullWidth={false}
-            variant="contained"
-            color="primary"
-            className="contactButton"
-          >
-            <Typography component="h6" variant="h6">
-              Submit
-            </Typography>
-          </Button>
+          <Grid>
+            <Grid>
+              {submitMsg === '' ? null : (
+                <Typography className="failedSubmit">{submitMsg}</Typography>
+              )}
+              <Button
+                type="submit"
+                fullWidth={false}
+                variant="contained"
+                color="primary"
+                className="contactButton"
+                onClick={e => onSubmitnClick(e)}
+              >
+                <Typography component="h6" variant="h6">
+                  Submit
+                </Typography>
+              </Button>
+            </Grid>
+          </Grid>
         </form>
       </div>
-      <div className="upsideDownPurpleWave" style={{marginBottom: '4.4rem'}} />
+      <div className="upsideDownPurpleWave" style={{marginBottom: '1.4rem'}} />
     </div>
   )
 }
