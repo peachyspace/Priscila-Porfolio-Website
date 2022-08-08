@@ -774,7 +774,7 @@ here we refrence the label with the class nav__toggle and select the img with th
   font-family: 'IBM Plex Mono';
 }
 .MuiGrid-container.projectHeader {
-  margin-top: 4em;
+  margin-top: 1em;
   /* padding-bottom: 12%; */
   padding-bottom: 4%;
   justify-content: center;

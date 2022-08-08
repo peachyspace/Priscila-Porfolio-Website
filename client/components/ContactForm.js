@@ -37,7 +37,7 @@ const ContactForm = ({
         <form className="contactForm">
           <Typography>Contact</Typography>
           <TextField
-            /* error={errors.firstName.length !== 0} */
+            error={errors.name.length !== 0}
             value={name}
             onChange={e => handleNameChange(e)}
             required={true}
@@ -53,7 +53,7 @@ const ContactForm = ({
             }
           />
           <TextField
-            /* error={errors.firstName.length !== 0} */
+            error={errors.email.length !== 0}
             value={email}
             onChange={e => handleEmailChange(e)}
             required={true}
@@ -71,7 +71,7 @@ const ContactForm = ({
             }
           />
           <TextField
-            /* error={errors.firstName.length !== 0} */
+            error={errors.messege.length !== 0}
             value={messege}
             onChange={e => handleMessegeChange(e)}
             required={true}

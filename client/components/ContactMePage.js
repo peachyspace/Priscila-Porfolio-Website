@@ -4,7 +4,10 @@ import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import TextField from '@material-ui/core/TextField'
+import {connect} from 'react-redux'
 import ContactForm from './ContactForm'
+import {sendContactEmail} from '../store'
+
 const intialErrors = {
   name: [],
   email: [],
@@ -23,7 +26,7 @@ const isEmail = val => {
     .reduce((acc, char, index) => (char === '.' ? index : acc), 0)
   return atIndex > -1 && greatestDotIndex > atIndex ? '' : 'must be an email'
 }
-const ContactMePage = ({}) => {
+const ContactMePage = ({sendingEmail}) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [messege, setMessege] = useState('')
@@ -31,6 +34,7 @@ const ContactMePage = ({}) => {
   const [submitMsg, setSubmitMsg] = useState('')
 
   const onSubmitnClick = async e => {
+    e.preventDefault()
     if (
       name.length !== 0 &&
       email.length !== 0 &&
@@ -41,6 +45,12 @@ const ContactMePage = ({}) => {
     } else {
       e.preventDefault()
       setSubmitMsg('Submission Failed')
+    }
+    try {
+      await sendingEmail(name, email, messege)
+    } catch (error) {
+      console.error(error)
+      console.log('error occured')
     }
   }
 
@@ -69,4 +79,17 @@ const ContactMePage = ({}) => {
     </div>
   )
 }
-export default ContactMePage
+
+/* const mapState = state  => {
+  return {
+      sendStatus: state.contactEmail
+  }
+} */
+const mapDispatch = dispatch => {
+  return {
+    sendingEmail: (name, email, messege) => {
+      dispatch(sendContactEmail(name, email, messege))
+    }
+  }
+}
+export default connect(null, mapDispatch)(ContactMePage)

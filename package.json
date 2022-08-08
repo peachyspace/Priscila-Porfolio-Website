@@ -50,6 +50,7 @@
     "history": "^4.9.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "morgan": "^1.9.1",
+    "nodemailer": "^6.7.7",
     "passport": "^0.4.0",
     "passport-google-oauth": "^2.0.0",
     "pg": "^8.3.2",
