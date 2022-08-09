@@ -55,7 +55,7 @@ const ContactMePage = ({sendingEmail}) => {
   }
 
   return (
-    <div className="main" style={{backgroundColor: '#f1eafc'}}>
+    <div className="contactPage" style={{backgroundColor: '#f1eafc'}}>
       <ContactForm
         name={name}
         handleNameChange={e => {

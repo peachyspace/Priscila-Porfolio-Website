@@ -1058,6 +1058,10 @@ here we refrence the label with the class nav__toggle and select the img with th
   color: #4e7d8e;
 }
 /* Contact Me */
+.contactPage {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
 .contactFormContainer {
   width: 100%;
   height: 110vh;
@@ -1072,6 +1076,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   background-color: #e5d5ff;
   display: flex;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contactForm {
   max-width: 500px;
@@ -1315,6 +1321,12 @@ here we refrence the label with the class nav__toggle and select the img with th
   .footerLink {
     font-size: 0.5rem;
     /* font-size: 0.91rem; */
+  }
+
+  /* contact page */
+  .contactPage {
+    padding-top: 153px;
+    padding-bottom: 153px;
   }
 }
 
@@ -1568,6 +1580,12 @@ here we refrence the label with the class nav__toggle and select the img with th
     background-size: 428px 96px;
   }
   /* About Me */
+
+  /* Conatct Page */
+  .contactPage {
+    padding-top: 121px;
+    padding-bottom: 121px;
+  }
 }
 @media screen and (min-width: 428px) and (max-width: 622px) {
   html,
@@ -1803,6 +1821,11 @@ here we refrence the label with the class nav__toggle and select the img with th
   }
   .projectBottomWave {
     background-size: 623px 96px;
+  }
+  /* Contact Page */
+  .contactPage {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 @media screen and (min-width: 622px) and (max-width: 830px) {

@@ -44,8 +44,8 @@ const ContactForm = ({
             variant="outlined"
             margin="normal"
             fullWidth
-            id="name"
             label="Name"
+            id="name"
             name="name"
             onBlur={() => validate(validations, name, 'name')}
             helperText={
@@ -60,10 +60,8 @@ const ContactForm = ({
             variant="outlined"
             margin="normal"
             fullWidth
-            /* className={classes.MuiInputLabel.outlined}
-            id="email"
-             */
             label="Email"
+            id="email"
             name="email"
             onBlur={() => validate(emailValidation, email, 'email')}
             helperText={
@@ -78,11 +76,11 @@ const ContactForm = ({
             variant="outlined"
             margin="normal"
             fullWidth
-            id="Messege"
             label="Messege"
-            name="Messege"
+            id="messege"
+            name="messege"
             multiline={true}
-            minRows={4}
+            /* minRows={1} */
             onBlur={() => validate(validations, messege, 'messege')}
             helperText={
               errors.messege.length === 0 ? null : errors.messege.join(', ')
