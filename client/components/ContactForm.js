@@ -14,14 +14,14 @@ const ContactForm = ({
   errors,
   setErrors,
   emailValidation,
-  messege,
-  handleMessegeChange,
+  message,
+  handleMessageChange,
   submitMsg,
   onSubmitnClick
 }) => {
   const validate = (validationsArray, value, string) => {
     //map over the validationsArray
-    //validationsArray is an array of validators and those validators return error messeges
+    //validationsArray is an array of validators and those validators return error messages
 
     setErrors(() => ({
       ...errors,
@@ -69,21 +69,21 @@ const ContactForm = ({
             }
           />
           <TextField
-            error={errors.messege.length !== 0}
-            value={messege}
-            onChange={e => handleMessegeChange(e)}
+            error={errors.message.length !== 0}
+            value={message}
+            onChange={e => handleMessageChange(e)}
             required={true}
             variant="outlined"
             margin="normal"
             fullWidth
-            label="Messege"
-            id="messege"
-            name="messege"
+            label="Message"
+            id="message"
+            name="message"
             multiline={true}
             /* minRows={1} */
-            onBlur={() => validate(validations, messege, 'messege')}
+            onBlur={() => validate(validations, message, 'message')}
             helperText={
-              errors.messege.length === 0 ? null : errors.messege.join(', ')
+              errors.message.length === 0 ? null : errors.message.join(', ')
             }
           />
           <Grid>

@@ -11,7 +11,7 @@ import {sendContactEmail} from '../store'
 const intialErrors = {
   name: [],
   email: [],
-  messege: []
+  message: []
 }
 
 const isRequried = val => {
@@ -29,7 +29,7 @@ const isEmail = val => {
 const ContactMePage = ({sendingEmail}) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [messege, setMessege] = useState('')
+  const [message, setMessage] = useState('')
   const [errors, setErrors] = useState(intialErrors)
   const [submitMsg, setSubmitMsg] = useState('')
 
@@ -38,7 +38,7 @@ const ContactMePage = ({sendingEmail}) => {
     if (
       name.length !== 0 &&
       email.length !== 0 &&
-      messege.length !== 0 &&
+      message.length !== 0 &&
       errors.email.length === 0
     ) {
       console.log('did it')
@@ -47,7 +47,7 @@ const ContactMePage = ({sendingEmail}) => {
       setSubmitMsg('Submission Failed')
     }
     try {
-      await sendingEmail(name, email, messege)
+      await sendingEmail(name, email, message)
     } catch (error) {
       console.error(error)
       console.log('error occured')
@@ -69,9 +69,9 @@ const ContactMePage = ({sendingEmail}) => {
         setErrors={setErrors}
         validations={[isRequried]}
         emailValidation={[isRequried, isEmail]}
-        messege={messege}
-        handleMessegeChange={e => {
-          setMessege(e.target.value)
+        message={message}
+        handleMessageChange={e => {
+          setMessage(e.target.value)
         }}
         submitMsg={submitMsg}
         onSubmitnClick={onSubmitnClick}
@@ -87,8 +87,8 @@ const ContactMePage = ({sendingEmail}) => {
 } */
 const mapDispatch = dispatch => {
   return {
-    sendingEmail: (name, email, messege) => {
-      dispatch(sendContactEmail(name, email, messege))
+    sendingEmail: (name, email, message) => {
+      dispatch(sendContactEmail(name, email, message))
     }
   }
 }

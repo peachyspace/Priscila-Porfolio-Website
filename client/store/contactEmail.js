@@ -22,12 +22,12 @@ const sendAnEmail = isSent => ({
 /**
  * THUNK CREATORS
  */
-export const sendContactEmail = (name, email, messege) => async dispatch => {
+export const sendContactEmail = (name, email, message) => async dispatch => {
   try {
     await axios.post('/api/sendEmail', {
       from_name: name,
       reply_to: email,
-      messege
+      message: message
     })
     dispatch(sendAnEmail({emailSent: true}))
   } catch (error) {
