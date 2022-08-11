@@ -53,6 +53,10 @@ form div {
 }
 .contentWrap {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbecff;
 }
 
 /* navMenu  */
@@ -1078,6 +1082,8 @@ here we refrence the label with the class nav__toggle and select the img with th
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 .contactForm {
   max-width: 500px;
@@ -1102,6 +1108,42 @@ here we refrence the label with the class nav__toggle and select the img with th
   font-size: clamp(15px, 2vw, 20px);
   margin-bottom: 1em;
 }
+.thankYouPage {
+  padding-top: 30px;
+  padding-bottom: 30px; /* 
+  height: 75vh; */
+  /* flex: 1; */
+}
+.messageHolder {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.message {
+  max-width: 500px;
+}
+.MuiTypography-body1.line1 {
+  margin-top: 5em;
+}
+.MuiTypography-body1.line2 {
+  margin-bottom: 0.8em;
+}
+.MuiTypography-body1.returnHomeBut {
+}
+.MuiButton-root.returnButton {
+  text-transform: none;
+}
+.MuiButtonBase-root.returnButton {
+  background-color: #ffffff;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+}
+.MuiButtonBase-root.returnButton:hover {
+  background-color: #85b1b3;
+  color: #ffffff;
+}
+
 /* @media screen and (max-width: 480px)  */
 @media screen and (min-width: 120px) and (max-width: 300px) {
   /* Landing Page */
@@ -1327,6 +1369,16 @@ here we refrence the label with the class nav__toggle and select the img with th
   .contactPage {
     padding-top: 153px;
     padding-bottom: 153px;
+  }
+  /* Thank You Page */
+  .MuiTypography-body1.line1 {
+    font-size: clamp(18px, 2vw, 29px);
+  }
+  .MuiTypography-body1.line2 {
+    font-size: clamp(18px, 2vw, 29px);
+  }
+  .MuiTypography-body1.returnHomeBut {
+    font-size: clamp(10px, 2vw, 29px);
   }
 }
 
@@ -1586,6 +1638,17 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-top: 121px;
     padding-bottom: 121px;
   }
+
+  /* Thank You Page */
+  .MuiTypography-body1.line1 {
+    font-size: clamp(20px, 2vw, 29px);
+  }
+  .MuiTypography-body1.line2 {
+    font-size: clamp(20px, 2vw, 29px);
+  }
+  .MuiTypography-body1.returnHomeBut {
+    font-size: clamp(12px, 2vw, 29px);
+  }
 }
 @media screen and (min-width: 428px) and (max-width: 622px) {
   html,
@@ -1827,7 +1890,18 @@ here we refrence the label with the class nav__toggle and select the img with th
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  /* Thank You Page */
+  .MuiTypography-body1.line1 {
+    font-size: clamp(22px, 2vw, 29px);
+  }
+  .MuiTypography-body1.line2 {
+    font-size: clamp(22px, 2vw, 29px);
+  }
+  .MuiTypography-body1.returnHomeBut {
+    font-size: clamp(14px, 2vw, 29px);
+  }
 }
+
 @media screen and (min-width: 622px) and (max-width: 830px) {
   html,
   body {

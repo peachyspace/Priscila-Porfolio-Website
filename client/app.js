@@ -1,5 +1,6 @@
 import React from 'react'
 import {ThemeProvider} from '@material-ui/styles'
+import {BrowserRouter} from 'react-router-dom'
 import theme from './components/theme'
 import {FooterSection, Navbar} from './components'
 import Routes from './routes'
@@ -10,8 +11,10 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <div className="pageContainer">
           <div className="contentWrap">
-            <Navbar />
-            <Routes />
+            <BrowserRouter>
+              <Navbar />
+              <Routes />
+            </BrowserRouter>
           </div>
           <FooterSection />
         </div>

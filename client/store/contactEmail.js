@@ -30,6 +30,7 @@ export const sendContactEmail = (name, email, message) => async dispatch => {
       message: message
     })
     dispatch(sendAnEmail({emailSent: true}))
+    history.push('/thankYouPage')
   } catch (error) {
     console.log(error)
   }

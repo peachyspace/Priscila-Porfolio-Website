@@ -35,7 +35,7 @@ const ContactForm = ({
       <div className="pastelPurpleFlippedWave" />
       <div className="formHolder">
         <form className="contactForm">
-          <Typography>Contact</Typography>
+          <Typography variant="h4">Contact</Typography>
           <TextField
             error={errors.name.length !== 0}
             value={name}
