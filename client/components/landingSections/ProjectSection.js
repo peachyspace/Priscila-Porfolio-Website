@@ -11,19 +11,6 @@ const ProjectSection = () => {
   }
   return (
     <Grid className="projectSec">
-      {/*       <Grid className="projectHeading">
-        <Typography
-          variant="h1"
-          className="landingBigFont"
-          style={{
-            paddingTop: '12px',
-            marginBottom: '20px',
-            background: 'none'
-          }}
-        >
-          Featured Project
-        </Typography>
-      </Grid> */}
       <Grid
         container
         /* rowSpacing={1} */
@@ -56,11 +43,16 @@ const ProjectSection = () => {
         style={{backgroundColor: '#e5d5ff'}}
       >
         <Button
-          variant="text"
+          type="button"
+          fullWidth={false}
           className="moreProjectsButton"
           style={{
-            textTransform: 'none'
+            textTransform: 'none',
+            maxWidth: '382px',
+            marginLeft: 'auto',
+            marginRight: 'auto'
           }}
+          href="/projects"
         >
           View More Projects
         </Button>

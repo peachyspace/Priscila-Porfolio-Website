@@ -1,4 +1,4 @@
-module.exports = io => {
+/* module.exports = io => {
   io.on('connection', socket => {
     console.log(`A socket connection to the server has been made: ${socket.id}`)
 
@@ -6,4 +6,4 @@ module.exports = io => {
       console.log(`Connection ${socket.id} has left the building`)
     })
   })
-}
+} */
