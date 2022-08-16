@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="./images/../public/images/workSpace.gif" width="40%"/>
+  <img src="./images/../public/images/workSpace.gif" width="60%"/>
 </p>
 
 <h5 align="center"> 📍Location: New York 🏙 </h5>
