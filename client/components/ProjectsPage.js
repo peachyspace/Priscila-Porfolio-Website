@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
-import Link from '@material-ui/core/Link'
 import codeEditorBG from '../../public/images/codeEditorBG.png'
 import projectCodeEditor from '../../public/images/projectCodeEditor.png'
 import MBSlider from './slider/MBSlider'
@@ -22,12 +21,7 @@ const ProjectsPage = () => {
       }}
     >
       <Grid container className="projectPageSection">
-        <Grid
-          className="projectHeader"
-          container
-          /* rowSpacing={1} */
-          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
-        >
+        <Grid className="projectHeader" container>
           <Grid item xs={6} className="projectIntroHeading">
             <Typography
               variant="h3"
@@ -45,7 +39,7 @@ const ProjectsPage = () => {
                 marginLeft: '0.3em'
               }}
             >
-              Take a look at past projects that have allowed me to sharpen my
+              Take a look at my past projects that have allowed me to sharpen my
               skills as a software engineer
             </Typography>
           </Grid>
@@ -69,8 +63,6 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          /* rowSpacing={1} */
-          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -134,8 +126,6 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          /* rowSpacing={1} */
-          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -153,7 +143,7 @@ const ProjectsPage = () => {
             <br />
             <Typography className="projectDetail">
               An app that allows users to reach their health goals by assigning
-              them a monster that will grow as they reach their goals
+              them a monster that will grow as they reach their goals.
             </Typography>
             <br />
             <Typography className="projectDetail">
@@ -188,8 +178,6 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          /* rowSpacing={1} */
-          /* columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -206,8 +194,8 @@ const ProjectsPage = () => {
             </Grid>
             <br />
             <Typography className="projectDetail">
-              A fictional ecommerce website that allows fans to buy products
-              from their favorite celeberties.
+              A fictional e-commerce website that allows fans to buy products
+              from their favorite celebrities.
             </Typography>
             <br />
             <Typography className="projectDetail">
@@ -242,8 +230,6 @@ const ProjectsPage = () => {
         <div className="projectWave" />
         <Grid
           container
-          /* rowSpacing={1} */
-          /*  columnSpacing={{xs: 1, sm: 2, md: 3}} */
           className="projectPageBox"
           style={{backgroundColor: '#85b1b3'}}
         >
@@ -260,15 +246,15 @@ const ProjectsPage = () => {
             </Grid>
             <br />
             <Typography className="projectDetail">
-              This website not only showcases my technical projects but also my
-              creativity. I love to create and design and I believe that this
-              portfolio is a true reflection of that.This is especially true
-              when looking ay my landing page where used CSS to bring animation
-              to it
+              This website uses my creativity to showcase my technical projects.
+              I love to create and design and I believe that this portfolio is a
+              true reflection of that. This is especially true when looking at
+              my landing page where I used CSS to bring animation to it.
             </Typography>
             <br />
             <Typography className="projectDetail">
-              Technologies: React, Material-UI, CSS. Git/GitHub
+              Technologies: React, Redux, Express.JS, Material-UI, CSS.
+              Git/GitHub
             </Typography>
             <p className="projectButtonHolder">
               <Button

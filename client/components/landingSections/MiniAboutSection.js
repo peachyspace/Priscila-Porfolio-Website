@@ -27,8 +27,7 @@ const MiniAboutSection = () => {
           <h1 className="miniIntroHeading">Hi! My name is Priscila</h1>
           <h3 className="miniIntroSubheading">
             I am a software engineer who is focused on creating exceptional user
-            experinces. Currently, I am looking for my next adventure. "I turn
-            ideas into reality."
+            experinces. Currently, I am looking for my next adventure.
           </h3>
         </div>
       </div>
