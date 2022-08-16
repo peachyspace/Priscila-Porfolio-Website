@@ -45,15 +45,15 @@ const AboutMe = ({}) => {
           <Typography className="aboutBodyText">
             As I helped my dad in his recovery I started to learn about about
             web development. I quickly saw how creativity was needed in this
-            field which made me fall in love with it. Being a caretaker and
-            being a student was difficult but staying resilient helped me push
-            through the challenges. I was fortunate to find out about Fullstack
-            Academy's Web Development Fellowship scholarship program. Thankfully
-            I was accepted to the program because I was placed in stimulating
-            environment where I could learn not only from my instructors but
-            also my peers. I am now looking utilize the skills I have learned
-            during my time at Fullstack at a company where I can be a Frontend
-            or Full Stack engineer.
+            field which made me fall in love with it. Being both a caretaker and
+            a student was difficult but staying resilient helped me push through
+            any challenges that I came across. I was fortunate to find out about
+            Fullstack Academy's Web Development Fellowship scholarship program.
+            Thankfully I was accepted to the program because I was placed in
+            stimulating environment where I could learn not only from my
+            instructors but also my peers. I am now looking utilize the skills I
+            have learned during my time at Fullstack at a company where I can be
+            a Frontend or Full Stack engineer.
           </Typography>
         </Grid>
       </Grid>
