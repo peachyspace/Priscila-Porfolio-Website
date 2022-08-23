@@ -31,7 +31,8 @@ const ProjectSection = () => {
           <Typography className="projectSecFeatText">Moodboard</Typography>
           <Typography className="projSecText">
             A workspace that allows users to unlesh their creativity by creating
-            mood boards. Users can utilize images from their computer or Pixabay
+            mood boards. Users can utilize images from their computer or
+            Pixabay.
           </Typography>
         </Grid>
       </Grid>
