@@ -32,14 +32,14 @@ const AboutMe = ({}) => {
           </Typography>
           <br />
           <Typography className="aboutBodyText">
-            In the spring of 2020 I was accepted to the The New York City
-            Teaching Fellows program. I was excited to help students navigate
-            through their journey by helping them tackle obstacles inside or
-            outside the classroom. My excitement vanished when the program was
-            cancelled due the pandemic. During that time my dad was hospitalized
-            due to COVID-19. Seeing my dad's resiliency in his 3 month battle
-            with COVID-19 showed me that I needed to be resilient in order to
-            achieve my goals.
+            In the spring of 2020 I was accepted to the New York City Teaching
+            Fellows program. I was excited to help students navigate through
+            their journey by helping them tackle obstacles inside or outside the
+            classroom. My excitement vanished when the program was cancelled due
+            the pandemic. During that time my dad was hospitalized due to
+            COVID-19. Seeing my dad's resiliency in his 3 month battle with
+            COVID-19 showed me that I needed to be resilient in order to achieve
+            my goals.
           </Typography>
           <br />
           <Typography className="aboutBodyText">
